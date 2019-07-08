@@ -5,7 +5,6 @@ import Interface.TapeInterface;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class TapePageIOS extends IOSBaseClass implements TapeInterface {
@@ -39,7 +38,9 @@ public class TapePageIOS extends IOSBaseClass implements TapeInterface {
     public void clickTESTE() {}
 
     @Override
-    public void waitSortIcon() {}
+    public boolean waitSortIcon() {
+        return false;
+    }
 
     @Override
     public void closeTooltips() {

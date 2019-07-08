@@ -10,7 +10,7 @@ interface TapeInterface {
     fun clickSearch()
     fun switchToSellers()
     fun clickTESTE()
-    fun waitSortIcon()
+    fun waitSortIcon(): Boolean
     fun clickSearchIcon()
 
 }

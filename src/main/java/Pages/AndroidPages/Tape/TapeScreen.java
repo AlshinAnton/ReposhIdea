@@ -53,8 +53,9 @@ public class TapeScreen extends AndroidBaseClass implements TapeInterface {
         clickAndroidElementByText("teste");    }
 
     @Override
-    public void waitSortIcon() {
+    public boolean waitSortIcon() {
         waitAndroidViewById("com.reposh.dev:id/bt_sort");
+        return false;
     }
 
     @Override
@@ -66,6 +67,10 @@ public class TapeScreen extends AndroidBaseClass implements TapeInterface {
                 e.printStackTrace();
             }
         }
+    }
+
+    public boolean tapeScreenIsVisible() {
+        return waitSortIcon();
     }
 
     @Override

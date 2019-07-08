@@ -28,8 +28,16 @@ public class AppiumController {
     public AppiumDriver driver;
     //Device currentDevice;
 
+    private final String HUB_HOST = "http://localhost:4445/wd/hub";
+    private final String URL_APPIUM_ONEPLUS_5T = "http://127.0.0.1:4723/wd/hub";
+    private final String URL_APPIUM_ONEPLUS_6 = "http://127.0.0.1:4724/wd/hub";
+    private final String URL_APPIUM_NEXUS = "http://127.0.0.1:4725/wd/hub";
+    private final String URL_APPIUM_XIAOMI = "http://127.0.0.1:4726/wd/hub";
+    private static final String URL_GALAXY_S8 = "http://127.0.0.1:4727/wd/hub";;
+
+
     public enum OS {
-        ANDROID,
+        ANDROID_OPPOA37,
         ANDROID_1_PLUS_6,
         ANDROID_1_PLUS_5T,
         IOS_IPHONE_6_PLUS_SIMULATOR,
@@ -55,7 +63,7 @@ public class AppiumController {
                         + "\n Model Number = " + currentDevice.getModelNumber()
                         + "\n Serial Number = " + currentDevice.getSerialNumber()
                         + "\n");
-                executionOS = currentDevice.getDeviceProductName().equals("Android") ? OS.ANDROID : OS.IOS_IPHONE_6_PLUS_SIMULATOR;
+                executionOS = currentDevice.getDeviceProductName().equals("Android") ? OS.ANDROID_OPPOA37 : OS.IOS_IPHONE_6_PLUS_SIMULATOR;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -67,11 +75,12 @@ public class AppiumController {
         }
         DesiredCapabilities capabilities = new DesiredCapabilities();
         switch (executionOS) {
-            case ANDROID:
+            case ANDROID_OPPOA37:
                 // assert currentDevice != null;
-                capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android"/*currentDevice.getDeviceProductName()*/);
-                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "5.1.1"/*currentDevice.getProductVersion()*/);
-                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "1003fcb5"/*currentDevice.getUniqueDeviceID()*/);
+                capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "5.1.1");
+                capabilities.setCapability(MobileCapabilityType.UDID, "1003fcb5");
+                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "OPPO A37 v.5.1");
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
                 capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
                 capabilities.setCapability(MobileCapabilityType.APP, pathToAndroidAPK);
@@ -83,9 +92,10 @@ public class AppiumController {
                 break;
             case ANDROID_1_PLUS_5T:
                 // assert currentDevice != null;
-                capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android"/*currentDevice.getDeviceProductName()*/);
-                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9"/*currentDevice.getProductVersion()*/);
-                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "95a4dfae"/*currentDevice.getUniqueDeviceID()*/);
+                capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
+                capabilities.setCapability(MobileCapabilityType.UDID, "95a4dfae");
+                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "One+5t");
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
                 capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
                 capabilities.setCapability(MobileCapabilityType.FULL_RESET, true);
@@ -94,12 +104,13 @@ public class AppiumController {
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, PACKAGEAPP);
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ACTIVITYAPP);
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_WAIT_ACTIVITY, WAITACTIVITYAPP);
-                driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+                driver = new AndroidDriver(new URL(URL_APPIUM_ONEPLUS_5T), capabilities);
                 break;
             case ANDROID_1_PLUS_6:
-                capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android"/*currentDevice.getDeviceProductName()*/);
-                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.0.2"/*currentDevice.getProductVersion()*/);
-                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "22ab8278"/*currentDevice.getUniqueDeviceID()*/);
+                capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.0.2");
+                capabilities.setCapability(MobileCapabilityType.UDID, "22ab8278");
+                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "One+6");
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
                 capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
                 capabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS,true);
@@ -107,12 +118,13 @@ public class AppiumController {
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, PACKAGEAPP);
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ACTIVITYAPP);
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_WAIT_ACTIVITY, WAITACTIVITYAPP);
-                driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+                driver = new AndroidDriver(new URL(URL_APPIUM_ONEPLUS_6), capabilities);
                 break;
             case ANDROID_NEXUS:
-                capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android"/*currentDevice.getDeviceProductName()*/);
-                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1"/*currentDevice.getProductVersion()*/);
-                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "02618a42b8924a2b"/*currentDevice.getUniqueDeviceID()*/);
+                capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1");
+                capabilities.setCapability(MobileCapabilityType.UDID, "02618a42b8924a2b");
+                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus");
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
                 capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
                 capabilities.setCapability(MobileCapabilityType.APP, pathToAndroidAPK);
@@ -120,12 +132,13 @@ public class AppiumController {
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, PACKAGEAPP);
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ACTIVITYAPP);
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_WAIT_ACTIVITY, WAITACTIVITYAPP);
-                driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+                driver = new AndroidDriver(new URL(URL_APPIUM_NEXUS), capabilities);
                 break;
             case ANDROID_XIAOMI:
                 capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
                 capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1");
-                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "33868b7");
+                capabilities.setCapability(MobileCapabilityType.UDID, "33868b7");
+                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Xiaomi");
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
                 capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
                 capabilities.setCapability(MobileCapabilityType.APP, pathToAndroidAPK);
@@ -133,12 +146,13 @@ public class AppiumController {
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, PACKAGEAPP);
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ACTIVITYAPP);
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_WAIT_ACTIVITY, WAITACTIVITYAPP);
-                driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+                driver = new AndroidDriver(new URL(URL_APPIUM_XIAOMI), capabilities);
                 break;
             case ANDROID_GALAXY_S8:
                 capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
                 capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.0");
-                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "988a164843584b344b");
+                capabilities.setCapability(MobileCapabilityType.UDID, "988a164843584b344b");
+                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy S8");
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
                 capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
                 capabilities.setCapability(MobileCapabilityType.APP, pathToAndroidAPK);
@@ -146,7 +160,7 @@ public class AppiumController {
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, PACKAGEAPP);
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ACTIVITYAPP);
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_WAIT_ACTIVITY, WAITACTIVITYAPP);
-                driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+                driver = new AndroidDriver(new URL(URL_GALAXY_S8), capabilities);
                 break;
 
             case IOS_IPHONE_XR:

@@ -44,7 +44,7 @@ public class AddPhotoFromGalleryOrCameraAndroid extends AndroidBaseClass impleme
 
     @Override
     public void clickMakePhoto() {
-        if (AppiumController.executionOS.equals(AppiumController.OS.ANDROID)) {
+        if (AppiumController.executionOS.equals(AppiumController.OS.ANDROID_OPPOA37)) {
             clickEnter(AndroidKeyCode.KEYCODE_CAMERA);
         } else {
             waitAndClickAndroidElementByID(makePhoto1PLUSID);
@@ -53,7 +53,7 @@ public class AddPhotoFromGalleryOrCameraAndroid extends AndroidBaseClass impleme
 
     @Override
     public void clickConfirmPhoto() {
-        if (AppiumController.executionOS.equals(AppiumController.OS.ANDROID)) {
+        if (AppiumController.executionOS.equals(AppiumController.OS.ANDROID_OPPOA37)) {
             waitAndClickAndroidElementByID(confirmCameraPhotoID);
         } else {
             waitAndClickAndroidElementByID(confirm1PLUSCameraPhotoID);

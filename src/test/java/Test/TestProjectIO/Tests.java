@@ -1,6 +1,5 @@
 package Test.TestProjectIO;
 
-import Test.AndroidTests.LoginAndRegTests.Login_test;
 import io.testproject.java.sdk.v2.Runner;
 import io.testproject.java.sdk.v2.drivers.AndroidDriver;
 import org.junit.jupiter.api.AfterAll;

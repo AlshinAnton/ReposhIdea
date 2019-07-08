@@ -84,7 +84,7 @@ public class BaseTestClass extends AppiumBaseClass {
     public void setUp() throws Exception {
         AppiumController.instance.start();
         switch (AppiumController.executionOS) {
-            case ANDROID:
+            case ANDROID_OPPOA37:
                 preConditionAndroid();
                 break;
             case ANDROID_1_PLUS_6:

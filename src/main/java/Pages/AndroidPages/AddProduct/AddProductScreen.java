@@ -9,9 +9,9 @@ import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 
-public class AddProductActivity extends AndroidBaseClass implements AddProductInterface {
+public class AddProductScreen extends AndroidBaseClass implements AddProductInterface {
 
-    public AddProductActivity(AppiumDriver driver) {
+    public AddProductScreen(AppiumDriver driver) {
         super(driver);
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }

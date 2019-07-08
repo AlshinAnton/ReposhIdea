@@ -171,7 +171,7 @@ public class BaseTestClass extends AppiumBaseClass {
         tapeInterface = new TapeActivity(driver());
         signUpGeoInterface = new SignUpGeoActivity(driver());
         signUpFriendsInterface = new SignUpFriendsActivity(driver());
-        addProductInterface = new AddProductActivity(driver());
+        addProductInterface = new AddProductScreen(driver());
         addPhotoFromGalleryInterface = new AddPhotoFromGalleryOrCameraAndroid(driver());
         categoryInterface = new CategoryActivity(driver());
         sizeInterface = new SizeActivity(driver());

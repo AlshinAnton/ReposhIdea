@@ -1,6 +1,7 @@
 package Test.AndroidTests
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.User
 import org.junit.Test
 
 class PublishFromSold : BaseTestClass() {
@@ -42,7 +43,7 @@ class PublishFromSold : BaseTestClass() {
 
     private fun moveToMyProducts() {
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
+        loginInterface.login(User.User1())
         tapeInterface.closeTooltips()
         bottomToolbarInterface.clickProfile()
         profilePageInterface.waitTooltip()

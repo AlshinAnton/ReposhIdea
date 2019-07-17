@@ -27,7 +27,9 @@ interface ProductCardInterface {
 
     fun getCommentsCount()
     fun assertCommentCount()
-    fun waitBargain()
+    fun waitBargainOfferPrice()
+    fun waitBargainMoveToBargain();
+    fun waitBargainOfferConfirm();
     fun clickBargain()
     fun getLikeCountBeforeLike()
     fun assertLikeCount()

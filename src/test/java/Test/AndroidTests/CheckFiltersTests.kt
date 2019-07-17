@@ -1,6 +1,7 @@
 package Test.AndroidTests
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.User
 import org.junit.Test
 
 class CheckFiltersTests : BaseTestClass() {
@@ -68,7 +69,7 @@ class CheckFiltersTests : BaseTestClass() {
 
     private fun preCondition() {
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
+        loginInterface.login(User.User1())
         tapeInterface.closeTooltips()
         bottomToolbarInterface.clickSearch()
         searchPageInterface.waitAndClickSearchIconTop()

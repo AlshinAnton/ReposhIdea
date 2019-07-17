@@ -1,6 +1,7 @@
 package Test.AndroidTests.SettingsTests
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.User
 import org.junit.Test
 
 class AddDeleteAddressTest : BaseTestClass() {
@@ -31,7 +32,7 @@ class AddDeleteAddressTest : BaseTestClass() {
 
     private fun goToAddAddressForm() {
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
+        loginInterface.login(User.User1())
         tapeInterface.closeTooltips()
         bottomToolbarInterface.clickProfile()
         profilePageInterface.waitTooltip()

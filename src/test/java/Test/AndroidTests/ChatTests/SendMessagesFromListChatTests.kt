@@ -1,6 +1,7 @@
 package Test.AndroidTests.ChatTests
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.User
 import org.junit.Test
 
 class SendMessagesFromListChatTests : BaseTestClass() {
@@ -27,7 +28,7 @@ class SendMessagesFromListChatTests : BaseTestClass() {
 
     private fun preCondition() {
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
+        loginInterface.login(user = User.User1())
         tapeInterface.closeTooltips()
         bottomToolbarInterface.clickNews()
         chatListInterface.waitTestChat()

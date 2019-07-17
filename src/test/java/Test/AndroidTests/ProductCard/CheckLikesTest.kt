@@ -1,6 +1,7 @@
 package Test.AndroidTests.ProductCard
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.User
 import org.junit.Test
 
 class CheckLikesTest : BaseTestClass() {
@@ -8,7 +9,7 @@ class CheckLikesTest : BaseTestClass() {
     @Test
     fun checkLikesTest() {
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
+        loginInterface.login(User.User1())
         tapeInterface.closeTooltips()
         bottomToolbarInterface.clickSearch()
         Thread.sleep(1000)

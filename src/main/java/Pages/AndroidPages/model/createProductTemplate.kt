@@ -3,8 +3,9 @@ package Pages.AndroidPages.model
 import AppiumSupport.BaseTestClass
 
 // Если не  получится публиковать продукт, то надо отдельно  создавать товары с курьером и постаматом , последующий сценарий будетзависеть от имени товара
-data class CreateProductTemplate(val usePhoto: Boolean = false,
-                                 val itemAndDescription: NameTemplate  = NameTemplate(),
+data class CreateProductTemplate(val userTemplate: UserTemplate,
+                                 val usePhoto: Boolean = false,
+                                 val itemAndDescription: NameTemplate = NameTemplate(),
                                  val useCategory: Boolean = false,
                                  val useSize: Boolean = false,
                                  val sizeTemplate: SizeTemplate = SizeTemplate(),
@@ -17,18 +18,47 @@ data class CreateProductTemplate(val usePhoto: Boolean = false,
                                  val useTariff: Boolean = false)
 
 
+data class NameTemplate(val nameDpdCourier: Boolean = false,
+                        val nameDpdPostamat: Boolean = false,
+                        val nameBothDpd: Boolean = false)
 
-data class NameTemplate (val nameDpdCourier : Boolean = false,
-                         val nameDpdPostamat : Boolean = false,
-                         val nameBothDpd : Boolean = false)
 data class SizeTemplate(val oneSize: Boolean = true)
 data class DeliveryTemplate(val dpdCourier: Boolean = false,
                             val dpdPostamat: Boolean = false,
                             val both: Boolean = false)
 
+data class UserTemplate(val user: User)
+
+sealed class User constructor(
+        open val phone: String,
+        open val code: String) {
+
+    class User1(override val phone: String = "9111111111",
+                override val code: String = "7642") : User(phone, code)
+
+    class User2(override val phone: String = "9222222222",
+                 override val code: String = "7642") : User(phone, code)
+
+    class User3(override val phone: String = "9333333333",
+                 override val code: String = "7642") : User(phone, code)
+
+    class User4(override val phone: String = "9444444444",
+                 override val code: String = "7642") : User(phone, code)
+
+    class User7(override val phone: String = "9777777777",
+                 override val code: String = "4315") : User(phone, code)
+
+    class User8(override val phone: String = "9888888888",
+                 override val code: String = "4315") : User(phone, code)
+
+    class User9(override val phone: String = "9999999999",
+                 override val code: String = "4315") : User(phone, code)
+}
+
+
 fun BaseTestClass.addProductByTemplate(template: CreateProductTemplate) {
     onboardingInterface.waitThenCloseOnBoardingPage()
-    loginInterface.loginAsTester1()
+    loginInterface.login(template.userTemplate.user)
     tapeInterface.closeTooltips()
     bottomToolbarInterface.clickAddProduct()
     addPhotoFromGalleryInterface.addPhoto()
@@ -82,7 +112,7 @@ fun BaseTestClass.addProductByTemplate(template: CreateProductTemplate) {
     if (template.itemAndDescription.nameDpdCourier) {
         addProductInterface.setProductNameCourier()
 
-    } else if (template.itemAndDescription.nameDpdPostamat){
+    } else if (template.itemAndDescription.nameDpdPostamat) {
         addProductInterface.setProductNamePostamat()
     } else if (template.itemAndDescription.nameBothDpd) {
         addProductInterface.setproductNameBothDeliveries()

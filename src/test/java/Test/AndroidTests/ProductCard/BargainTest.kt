@@ -1,61 +1,77 @@
 package Test.AndroidTests.ProductCard
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.User
+import org.junit.Test
 
 class BargainTest : BaseTestClass() {
 
-    /*@Test
-    fun BargainNormalScenarioTest() {
-        onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
-        bottomToolbarInterface.clickSearch()
-        searchPageInterface.waitAndClickSearchField()
-        searchPageInterface.setTextForSearchHeadPhones()
-        searchPageInterface.clickEnter()
-        searchPageInterface.clickByHeadPhonesProduct()
-        productCardInterface.waitBargain()
-        productCardInterface.clickBargain()
-        bargainInterface.waitChooseSizeScreen()
-        bargainInterface.clickByFirstSize()
-        bargainInterface.getProductPrice()
-        bargainInterface.clickContinue()
-        bargainInterface.waitScreen2Bargain()
-        bargainInterface.checkSize()
-        bargainInterface.checkPrice()
-        bargainInterface.sendYourPrice("2500")
+    @Test
+    fun BargainCloseAndOpenTest() {
+        moveToBargain()
+        bargainInterface.sendYourPrice("2000")
         bargainInterface.clickSendOffer()
-        productCardInterface.waitBargain()
+        productCardInterface.waitBargainMoveToBargain()
         productCardInterface.clickBargain()
-        bargainInterface.assertBargainMessage()
-        bargainInterface.waitCancelBargainBtn()
-        bargainInterface.clickCancelBargainBtn()
-        bargainInterface.waitCancelBargainDialog()
-        bargainInterface.clickConfirmCancelBargain()
-        productCardInterface.waitBargain()
-        productCardInterface.clickBargain()
-        bargainInterface.waitChooseSizeScreen()
+        bargainInterface.waitCancelOrderBtn()
+        bargainInterface.clickCancelOrderBtn()
+        bargainInterface.waitCloseBargainAllert()
+        bargainInterface.clickCloseBargainInAllert()
+        bargainInterface.waitCloseBargainText()
     }
 
     @Test
-fun lowestAndLargestOfferInBargain() {
+    fun LowOfferInBargain() {
+        moveToBargain()
+        bargainInterface.sendPriceLessThen300()
+        bargainInterface.clickSendOffer()
+        bargainInterface.waitErrorMessage()
+        bargainInterface.assertLowPriceErrorMessage()
+    }
+
+    @Test
+    fun HighOfferInBargain() {
+        moveToBargain()
+        bargainInterface.sendHighPrice()
+        bargainInterface.clickSendOffer()
+        bargainInterface.waitErrorMessage()
+        bargainInterface.assertHighPriceErrorMessage()
+    }
+
+    @Test
+    fun FullAcceptBargain() {
+        //login as tester 3
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
-        bottomToolbarInterface.clickSearch()
+        loginInterface.login(User.User1())
+        tapeInterface.closeTooltips()
+        tapeInterface.clickSearchIcon()
+        searchPageInterface.waitAndClickSearchField()
+        //Search tester 4
+        // click by first product in sell tab
+        // normal bargain scenario
+        // tester 3 = logout
+        // login tester 4
+        // move to chat/bargain
+        // find last offer with status = ожидает вашего ответа
+        // confirm price + assert
+        // tester 4 = logout
+        // tester 3 = login
+        // move to chat/bargain
+        // assert status
+    }
+
+
+    private fun moveToBargain() {
+        onboardingInterface.waitThenCloseOnBoardingPage()
+        loginInterface.login(User.User1())
+        tapeInterface.closeTooltips()
+        tapeInterface.clickSearchIcon()
         searchPageInterface.waitAndClickSearchField()
         searchPageInterface.setTextForSearchHeadPhones()
         searchPageInterface.clickEnter()
         searchPageInterface.clickByHeadPhonesProduct()
-        productCardInterface.waitBargain()
+        productCardInterface.waitBargainOfferPrice()
         productCardInterface.clickBargain()
-        bargainInterface.waitChooseSizeScreen()
-        bargainInterface.clickByFirstSize()
-        bargainInterface.clickContinue()
-        bargainInterface.waitScreen2Bargain()
-        bargainInterface.sendYourPrice("100")
-        bargainInterface.clickSendOffer()
-        bargainInterface.assertErrorMessageLowPrice()
-        bargainInterface.sendYourPrice("5000")
-        bargainInterface.clickSendOffer()
-        bargainInterface.assertErrorMessageHighPrice()
-    }*/
+        bargainInterface.waitBargainScreen()
+    }
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test.AndroidTests.LoginAndRegTests.Login_test" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-07-15T12:01:06" hostname="Tonis-iMac.local" time="67.715">
+  <properties/>
+  <testcase name="incorrectCode" classname="Test.AndroidTests.LoginAndRegTests.Login_test" time="21.531"/>
+  <testcase name="correctLoginTest" classname="Test.AndroidTests.LoginAndRegTests.Login_test" time="27.22"/>
+  <testcase name="incorrectPhoneNumber" classname="Test.AndroidTests.LoginAndRegTests.Login_test" time="18.964"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[июл 15, 2019 3:01:17 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+июл 15, 2019 3:01:39 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+июл 15, 2019 3:02:06 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

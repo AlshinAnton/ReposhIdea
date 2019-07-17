@@ -1,13 +1,14 @@
 package Test.AndroidTests.ProfileTests
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.User
 import org.junit.Test
 
 class ProfileTests : BaseTestClass() {
 
     private fun goToProfile() {
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
+        loginInterface.login(User.User1())
         tapeInterface.closeTooltips()
         bottomToolbarInterface.clickProfile()
         profilePageInterface.waitTooltip()

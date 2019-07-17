@@ -1,6 +1,7 @@
 package Test.AndroidTests.SettingsTests
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.User
 
 class EditProfileTests : BaseTestClass() {
 
@@ -53,7 +54,7 @@ class EditProfileTests : BaseTestClass() {
 
     private fun preCondition() {
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
+        loginInterface.login(User.User1())
         bottomToolbarInterface.clickProfile()
         settingsInterface.clickByEditProfile()
         editProfileInterface.waitEditProfilePage()

@@ -26,6 +26,8 @@ class ProductCardScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), Pro
     private val statusID = "com.reposh.dev:id/tvSold"
     private val productNameID = "com.reposh.dev:id/tv_product_name"
 
+    private val bargainId = "com.reposh.dev:id/btn_offer"
+
     override var productID: Int = 0
     override var productName: String = ""
 
@@ -119,11 +121,19 @@ class ProductCardScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), Pro
     }
 
     override fun clickBargain() {
-        clickAndroidElementByText("Предложить цену")
+        waitAndClickAndroidElementByID(bargainId)
     }
 
-    override fun waitBargain() {
+    override fun waitBargainOfferPrice() {
         waitANDROIDElementByTEXT("Предложить цену")
+    }
+
+    override fun waitBargainMoveToBargain() {
+        waitANDROIDElementByTEXT("Перейти в торги")
+    }
+
+    override fun waitBargainOfferConfirm() {
+        waitANDROIDElementByTEXT("Ура")
     }
 
     var countLikesBefore = 0

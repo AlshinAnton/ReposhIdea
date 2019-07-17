@@ -11,6 +11,7 @@ class AddProductTest : BaseTestClass() {
     //@DisplayName("Publish product only with necessary fields = photo, name, description, brand, category, size")
     fun publishProductWithDPDCourier() {
                 val createProductTemplate = CreateProductTemplate(
+                        UserTemplate(User.User1()),
                         usePhoto = true,
                         itemAndDescription = NameTemplate(nameDpdCourier = true),
                         useCategory = true,
@@ -32,6 +33,7 @@ class AddProductTest : BaseTestClass() {
     //@DisplayName("Publish product only with necessary fields = photo, name, description, brand, category, size")
     fun publishProductWithDPDPostamat() {
         val createProductTemplate = CreateProductTemplate(
+                UserTemplate(User.User1()),
                 usePhoto = true,
                 itemAndDescription = NameTemplate(nameDpdPostamat = true),
                 useCategory = true,
@@ -53,6 +55,7 @@ class AddProductTest : BaseTestClass() {
     //@DisplayName("Publish product only with necessary fields = photo, name, description, brand, category, size")
     fun publishProductWithBOTHDeliveries() {
         val createProductTemplate = CreateProductTemplate(
+                UserTemplate(User.User1()),
                 usePhoto = true,
                 itemAndDescription = NameTemplate(nameBothDpd = true),
                 useCategory = true,

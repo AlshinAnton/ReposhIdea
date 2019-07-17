@@ -3,6 +3,7 @@ package Pages.AndroidPages.model
 import AppiumSupport.BaseTestClass
 
 data class ModerationTemplate (
+        val userTemplate : UserTemplate,
         val publish: Boolean = true,
         val reject: RejectTemplate = RejectTemplate()
 )
@@ -20,7 +21,7 @@ data class RejectTemplate (
 
 fun BaseTestClass.moderationTemplate(template: ModerationTemplate) {
     onboardingInterface.waitThenCloseOnBoardingPage()
-    loginInterface.loginAsTester9()
+    loginInterface.login(template.userTemplate.user)
     tapeInterface.closeTooltips()
     bottomToolbarInterface.clickProfile()
     settingsPageInterface.swipeToMyProducts()

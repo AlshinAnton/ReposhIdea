@@ -1,6 +1,7 @@
 package Test.AndroidTests.ProductCard
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.User
 import org.junit.Test
 
 class CheckCommentsTest : BaseTestClass() {
@@ -9,9 +10,8 @@ class CheckCommentsTest : BaseTestClass() {
 
     @Test
     fun checkCommentsInMyGoodsForSaleTest() {
-        //TODO("Ждем пока ребята починят, товар на продаже со статусом продано, так как сейчас мы переходим в проданный товар ")
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
+        loginInterface.login(User.User1())
         tapeInterface.closeTooltips()
         bottomToolbarInterface.clickProfile()
         profilePageInterface.waitTooltip()

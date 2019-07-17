@@ -2,6 +2,7 @@ package Pages.IOSPages.LoginAndRegistration;
 
 import AndroidAndIOSHelpers.IOSBaseClass;
 import Interface.LoginInterface;
+import Pages.AndroidPages.model.User;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.jetbrains.annotations.NotNull;
@@ -61,28 +62,6 @@ public class LoginPageIOS extends IOSBaseClass implements LoginInterface {
         clickViewById(confirmCodeBtnName);
     }
 
-    @Override
-    public void loginAsTester9() {
-        String phone9 = "99999999999";
-        enterPhoneNumber(phone9);
-        similarLogin();
-    }
-
-
-    @Override
-    public void loginAsTester8() {
-        String phone8 = "98888888888";
-        enterPhoneNumber(phone8);
-        similarLogin();
-    }
-
-    @Override
-    public void loginAsTester7() {
-        String phone7 = "97777777777";
-        enterPhoneNumber(phone7);
-        similarLogin();
-    }
-
     private void similarLogin() {
         clickReceiveCodeBtn();
         waitCodeScreen();
@@ -101,7 +80,7 @@ public class LoginPageIOS extends IOSBaseClass implements LoginInterface {
     }
 
     @Override
-    public void loginAsTester1() {
+    public void login(@NotNull User user) {
 
     }
 }

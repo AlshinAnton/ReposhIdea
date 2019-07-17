@@ -1,6 +1,7 @@
 package Test.Checkout
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.User
 import org.junit.Test
 
 class BuyProductWithDpdCourier : BaseTestClass() {
@@ -8,7 +9,7 @@ class BuyProductWithDpdCourier : BaseTestClass() {
     @Test
     fun buyProductWithCourierDelivery() {
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester7()
+        loginInterface.login(User.User7())
         tapeInterface.closeTooltips()
         tapeInterface.clickSearchIcon()
         searchPageInterface.waitAndClickSearchField()

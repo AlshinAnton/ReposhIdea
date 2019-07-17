@@ -3,6 +3,8 @@ package Pages.AndroidPages.LoginAndRegistration;
 import AndroidAndIOSHelpers.AndroidBaseClass;
 import Interface.LoginInterface;
 
+import Pages.AndroidPages.model.User;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.AppiumDriver;
@@ -28,7 +30,9 @@ public class LoginScreen extends AndroidBaseClass implements LoginInterface {
     private String incorrectPhoneError = "Код мобильного оператора должен начинаться с 9";
     private String incorrectCodeError = "Неправильный код. Осталось 4 попытки";
     private String phone1 = "9111111111";
-
+    private String phone2 = "9222222222";
+    private String phone3 = "9333333333";
+    private String phone4 = "9444444444";
 
 
     public LoginScreen(AppiumDriver driver) {
@@ -84,29 +88,11 @@ public class LoginScreen extends AndroidBaseClass implements LoginInterface {
         waitAndClickAndroidElementByID(confirmCodeBtnID);
     }
 
-    @Override
-    public void loginAsTester9() {
-        enterPhoneNumber(phone9);
-        similarLogin();
-    }
-
     private void similarLogin() {
         clickReceiveCodeBtn();
         waitCodeScreen();
         enterCode();
         clickConfirmCodeBtn();
-    }
-
-    @Override
-    public void loginAsTester8() {
-        enterPhoneNumber(phone8);
-        similarLogin();
-    }
-
-    @Override
-    public void loginAsTester7() {
-        enterPhoneNumber(phone7);
-        similarLogin();
     }
 
     @Override
@@ -120,15 +106,11 @@ public class LoginScreen extends AndroidBaseClass implements LoginInterface {
     }
 
     @Override
-    public void loginAsTester1() {
-        enterPhoneNumber(phone1);
+    public void login(@NotNull User user) {
+        enterPhoneNumber(user.getPhone());
         clickReceiveCodeBtn();
         waitCodeScreen();
-        enterCodeFor911();
+        sendKeysToAndroidElementWithID(codeFieldID, user.getCode());
         clickConfirmCodeBtn();
-    }
-
-    private void enterCodeFor911() {
-        sendKeysToAndroidElementWithID(codeFieldID, code911);
     }
 }

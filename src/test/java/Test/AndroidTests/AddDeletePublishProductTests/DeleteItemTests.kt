@@ -1,37 +1,14 @@
 package Test.AndroidTests.AddDeletePublishProductTests
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.User
+import Pages.AndroidPages.model.UserTemplate
 import org.junit.Test
 
 class DeleteItemTests : BaseTestClass() {
 
-    /*@Test
-    TODO : Ждем фикса бага, когда товар в продаже отображается как проданный
-
-    fun deleteItemFromMyProducts() {
-        val deleteTemplateLocal = DeleteTemplate(
-                deleteFrom_ENUM = DeleteTemplate.DELETE_FROM.PUBLISHED
-        )
-        deleteProductByTemplateZDES_OPISANIE_DEISTVII(deleteTemplateLocal)
-    }*/
-
-    @Test
-    fun deleteItemFromDraft() {
-        val deleteTemplateLocal = DeleteTemplate(
-                deleteFrom_ENUM = DeleteTemplate.DELETE_FROM.DRAFT
-        )
-        deleteProductByTemplateZDES_OPISANIE_DEISTVII(deleteTemplateLocal)
-    }
-
-    @Test
-    fun deleteItemFromInModeration() {
-        val deleteTemplateLocal = DeleteTemplate(
-                deleteFrom_ENUM = DeleteTemplate.DELETE_FROM.ON_MODERATION
-        )
-        deleteProductByTemplateZDES_OPISANIE_DEISTVII(deleteTemplateLocal)
-    }
-
     data class DeleteTemplate(
+            val userTemplate: UserTemplate,
             val deleteFrom_ENUM: DELETE_FROM? = null) {
         enum class DELETE_FROM {
             PUBLISHED,
@@ -40,9 +17,35 @@ class DeleteItemTests : BaseTestClass() {
         }
     }
 
+    @Test
+    fun deleteItemFromMyProducts() {
+        val deleteTemplateLocal = DeleteTemplate(
+                deleteFrom_ENUM = DeleteTemplate.DELETE_FROM.PUBLISHED,
+                userTemplate = UserTemplate(user = User.User1()))
+        deleteProductByTemplateZDES_OPISANIE_DEISTVII(deleteTemplateLocal)
+    }
+
+    @Test
+    fun deleteItemFromDraft() {
+        val deleteTemplateLocal = DeleteTemplate(
+                deleteFrom_ENUM = DeleteTemplate.DELETE_FROM.DRAFT,
+                userTemplate = UserTemplate(user = User.User1())
+        )
+        deleteProductByTemplateZDES_OPISANIE_DEISTVII(deleteTemplateLocal)
+    }
+
+    @Test
+    fun deleteItemFromInModeration() {
+        val deleteTemplateLocal = DeleteTemplate(
+                deleteFrom_ENUM = DeleteTemplate.DELETE_FROM.ON_MODERATION,
+                userTemplate = UserTemplate(user = User.User1())
+        )
+        deleteProductByTemplateZDES_OPISANIE_DEISTVII(deleteTemplateLocal)
+    }
+
     private fun deleteProductByTemplateZDES_OPISANIE_DEISTVII(template: DeleteTemplate) {
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
+        loginInterface.login(template.userTemplate.user)
         tapeInterface.closeTooltips()
         bottomToolbarInterface.clickProfile()
         profilePageInterface.waitTooltip()

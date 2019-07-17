@@ -26,6 +26,8 @@ public class AddPhotoFromGalleryOrCameraAndroid extends AndroidBaseClass impleme
     private String cropCameraPhotoID = "com.reposh.dev:id/menu_crop";
     private String makePhoto1PLUSID = "com.oneplus.camera:id/primary_capture_button";
 
+    private String choosePhotoID = "com.reposh.dev:id/check_view";
+
 
     @Override
     public void waitAddPhotoFragment() {
@@ -87,12 +89,12 @@ public class AddPhotoFromGalleryOrCameraAndroid extends AndroidBaseClass impleme
 
     @Override
     public void waitGallery() {
-
+        waitAndroidViewById(choosePhotoID);
     }
 
     @Override
     public void chooseFirstPhoto() {
-        //android.widget.GridView//android.widget.ImageView[1]
+
     }
 
     @Override
@@ -126,6 +128,12 @@ public class AddPhotoFromGalleryOrCameraAndroid extends AndroidBaseClass impleme
         clickMakePhoto();
         clickConfirmPhoto();
         clickCropPhoto();
+
+    }
+
+    public void addPhotoFromGallery() {
+        clickChooseFromGallery1();
+        waitGallery();
 
     }
 }

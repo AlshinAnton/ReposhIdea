@@ -1,9 +1,11 @@
 package Pages.IOSPages.model
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.model.UserTemplate
 
 
 data class ModerationTemplateIOS (
+        val userTemplate: UserTemplate,
         val publish: Boolean = true,
         val reject: RejectTemplateIOS = RejectTemplateIOS()
 )
@@ -21,7 +23,7 @@ data class RejectTemplateIOS (
 
 fun BaseTestClass.moderationTemplateIOS(template: ModerationTemplateIOS) {
     onboardingInterface.waitThenCloseOnBoardingPage()
-    loginInterface.loginAsTester9()
+    loginInterface.login(template.userTemplate.user)
     bottomToolbarInterface.clickProfile()
     settingsPageInterface.swipeToMyProducts()
     myProductsInterface.swipeToNextTab()

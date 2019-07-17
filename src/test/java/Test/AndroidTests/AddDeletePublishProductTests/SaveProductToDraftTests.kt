@@ -184,6 +184,7 @@ class SaveProductToDraftTests : BaseTestClass() {
     @Test
     fun saveToDrfatsWithDpdPostamat() {
         val createProductTemplate = CreateProductTemplate(
+                userTemplate = UserTemplate(user = User.User1()),
                 usePhoto = true,
                 itemAndDescription = NameTemplate(nameDpdPostamat = true),
                 useCategory = true,
@@ -204,6 +205,7 @@ class SaveProductToDraftTests : BaseTestClass() {
     @Test
     fun saveToDrfatsWithDpdCourierAndPostamat() {
         val createProductTemplate = CreateProductTemplate(
+                userTemplate = UserTemplate(user = User.User1()),
                 usePhoto = true,
                 itemAndDescription = NameTemplate(nameBothDpd = true),
                 useCategory = true,

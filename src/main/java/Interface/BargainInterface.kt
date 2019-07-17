@@ -1,20 +1,26 @@
 package Interface
 interface BargainInterface {
-    fun waitChooseSizeScreen()
-    fun clickByFirstSize()
-    fun getProductPrice()
-    fun clickContinue()
-    fun waitScreen2Bargain()
-    fun checkSize()
-    fun checkPrice()
-    fun sendYourPrice(offer : String)
-    fun clickSendOffer()
-    fun assertBargainMessage()
-    fun waitCancelBargainBtn()
-    fun clickCancelBargainBtn()
-    fun waitCancelBargainDialog()
-    fun clickConfirmCancelBargain()
-    fun assertErrorMessageLowPrice()
-    fun assertErrorMessageHighPrice()
 
+    fun getProductPrice()
+    fun sendYourPrice(offer : String)
+
+    fun waitBargainScreen()
+    fun assertProductPriceInBargainScreen()
+    fun setMyPrice()
+    fun clickSendOffer()
+    fun waitCancelOrderBtn()
+    fun clickCancelOrderBtn()
+
+    fun waitFrozenBragainText()
+    fun waitCloseBargainText()
+
+    fun clickCreateOrderBtn()
+    fun waitCloseBargainAllert()
+    fun clickCloseBargainInAllert()
+
+    fun waitErrorMessage()
+    fun assertLowPriceErrorMessage()
+    fun assertHighPriceErrorMessage()
+    fun sendPriceLessThen300()
+    fun sendHighPrice()
 }

@@ -21,4 +21,5 @@ interface AddPhotoFromGalleryInterface {
     fun chooseThirdPhoto()
     fun chooseForthPhoto()
     fun addPhoto()
+
 }

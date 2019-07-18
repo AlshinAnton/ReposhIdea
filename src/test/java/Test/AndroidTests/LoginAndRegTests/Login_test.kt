@@ -1,8 +1,8 @@
 package Test.AndroidTests.LoginAndRegTests
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.LoginAndRegistration.User
 
-import Pages.AndroidPages.model.User
 import org.junit.Test
 
 class Login_test : BaseTestClass() {

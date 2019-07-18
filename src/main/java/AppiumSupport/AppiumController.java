@@ -16,14 +16,14 @@ public class AppiumController {
 
     private String pathToAndroidAPK = "/Users/Anton/Desktop/Android/installed/build/outputs/apk/debug/Reposh-debug-1.0.1.apk";
     //private String pathToIOSApp = "/Users/Anton/Library/Developer/Xcode/DerivedData/reposh-ghztocakrnkemcamrssxndllxytz/Build/Products/Debug-iphoneos/mamsy360.app";
-    private String pathToIOSIpa = "/Users/Anton/Desktop/reposhAutoSign/mamsy360.ipa";
+    private String pathToIOSIpa = "/Users/Anton/Desktop/ReposhIPA/Reposh.ipa";
 
     private final String PACKAGEAPP = "com.reposh.dev";
     private final String ACTIVITYAPP = "com.reposh.presentation.ui.activity.MainActivity";
     private final String WAITACTIVITYAPP = "com.reposh.feature.auth.ui.activity.OnboardingActivity";
 
 
-    public static OS executionOS = OS.ANDROID_1_PLUS_5T;
+    public static OS executionOS = OS.IOS_IPHONE_6_PLUS;
     public static AppiumController instance = new AppiumController();
     public AppiumDriver driver;
     //Device currentDevice;
@@ -165,13 +165,13 @@ public class AppiumController {
 
             case IOS_IPHONE_XR:
                 capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "ios");
-                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.1");
                 capabilities.setCapability(MobileCapabilityType.UDID, "00008020-0008583E3CBA002E");
+                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.3.1");
                 capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone XR");
                 capabilities.setCapability("xcodeSigningId", "iPhone Developer");
                 capabilities.setCapability("xcodeOrgId", "6P5Q34RWAU");
                 capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
-                capabilities.setCapability(MobileCapabilityType.FULL_RESET, false);
+                capabilities.setCapability(MobileCapabilityType.FULL_RESET, true);
                 capabilities.setCapability(MobileCapabilityType.APP, pathToIOSIpa);
                 capabilities.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS,true);
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
@@ -198,23 +198,17 @@ public class AppiumController {
 
             case IOS_IPHONE_6_PLUS:
                 capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "ios");
-                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.0");
+                capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.1.2");
                 capabilities.setCapability(MobileCapabilityType.UDID, "5b7992f7a17209910afaa714f374398721f8db9d");
                 capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6 Plus");
                 capabilities.setCapability("xcodeSigningId", "iPhone Developer");
                 capabilities.setCapability("xcodeOrgId", "6P5Q34RWAU");
-                capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
-                capabilities.setCapability(MobileCapabilityType.FULL_RESET, false);
+                capabilities.setCapability(MobileCapabilityType.FULL_RESET, true);
                 capabilities.setCapability(MobileCapabilityType.APP, pathToIOSIpa);
                 capabilities.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS,true);
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
+                capabilities.setCapability("showXcodeLog", true);
                 driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-                driver.switchTo().alert().accept();
-                try {
-                    Thread.sleep(4000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
                 break;
 
             case IOS_IPHONE_6S_KONSTANTIN:
@@ -231,12 +225,8 @@ public class AppiumController {
                 capabilities.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS,true);
                 capabilities.setCapability("simpleIsVisibleCheck", false);
                 driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-                driver.switchTo().alert().accept();
-                try {
-                    Thread.sleep(4000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+
+                //driver.switchTo().alert().accept(); = не работает
                 break;
             case IOS_IPHONE_5S:
                 capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "ios");

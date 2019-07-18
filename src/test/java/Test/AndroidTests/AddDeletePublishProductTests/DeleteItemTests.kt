@@ -1,7 +1,7 @@
 package Test.AndroidTests.AddDeletePublishProductTests
 
 import AppiumSupport.BaseTestClass
-import Pages.AndroidPages.model.User
+import Pages.AndroidPages.LoginAndRegistration.User
 import Pages.AndroidPages.model.UserTemplate
 import org.junit.Test
 

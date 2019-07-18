@@ -1,6 +1,6 @@
 package Interface
 
-import Pages.AndroidPages.model.User
+import Pages.AndroidPages.LoginAndRegistration.User
 
 interface LoginInterface {
     fun enterPhoneNumber(phoneNum : String)

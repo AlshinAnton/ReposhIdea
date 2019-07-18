@@ -1,16 +1,17 @@
-package Test.Checkout
+package Test.IOSTests.LoginAndRegIOSTests
 
 import AppiumSupport.BaseTestClass
+
 import Pages.AndroidPages.LoginAndRegistration.User
 import org.junit.Test
 
-class CancelPurchaseTest : BaseTestClass() {
+class Login_testIOS : BaseTestClass() {
 
     @Test
-    fun cancelPurchaseBySellerTest() {
+    fun correctLoginTest() {
         onboardingInterface.waitThenCloseOnBoardingPage()
         loginInterface.login(User.User9())
         tapeInterface.closeTooltips()
-        bottomToolbarInterface.clickProfile()
+
     }
 }

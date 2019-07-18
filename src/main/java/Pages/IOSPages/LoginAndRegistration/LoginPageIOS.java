@@ -2,7 +2,7 @@ package Pages.IOSPages.LoginAndRegistration;
 
 import AndroidAndIOSHelpers.IOSBaseClass;
 import Interface.LoginInterface;
-import Pages.AndroidPages.model.User;
+import Pages.AndroidPages.LoginAndRegistration.User;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.jetbrains.annotations.NotNull;
@@ -10,8 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPageIOS extends IOSBaseClass implements LoginInterface {
 
-    private String codeFieldID = "phoneNodeInputArea";
-    private String helper_tvID = "";
+    private String phoneFieldID = "phoneNodeInputArea";
+    private String codeFieldID = "codeNodeInputArea";
 
     public LoginPageIOS(AppiumDriver driver) {
         super(driver);
@@ -20,8 +20,8 @@ public class LoginPageIOS extends IOSBaseClass implements LoginInterface {
 
     @Override
     public void enterPhoneNumber(@NotNull String phoneNum) {
-        String phoneFieldID = "phoneNodeInputArea";
-        waitIOSViewById(phoneFieldID);
+        //waitIOSViewById(phoneFieldID);
+        //clickViewById(phoneFieldID);
         sendKeysToIOSElementWithID(phoneFieldID, phoneNum);
     }
 
@@ -48,7 +48,7 @@ public class LoginPageIOS extends IOSBaseClass implements LoginInterface {
 
     @Override
     public void enterCode() {
-        String code = "43150";
+        String code = "4315";
         sendKeysToIOSElementWithID(codeFieldID, code);
     }
 
@@ -60,13 +60,6 @@ public class LoginPageIOS extends IOSBaseClass implements LoginInterface {
         String confirmCodeBtnName = "Подтвердить";
         waitIOSViewById(confirmCodeBtnName);
         clickViewById(confirmCodeBtnName);
-    }
-
-    private void similarLogin() {
-        clickReceiveCodeBtn();
-        waitCodeScreen();
-        enterCode();
-        clickConfirmCodeBtn();
     }
 
     @Override
@@ -81,6 +74,10 @@ public class LoginPageIOS extends IOSBaseClass implements LoginInterface {
 
     @Override
     public void login(@NotNull User user) {
-
+        enterPhoneNumber(user.getPhone());
+        clickReceiveCodeBtn();
+        waitCodeScreen();
+        sendKeysToIOSElementWithID(codeFieldID, user.getCode());
+        clickConfirmCodeBtn();
     }
 }

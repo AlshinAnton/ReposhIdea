@@ -1,7 +1,7 @@
 package Test.AndroidTests.ChatTests
 
 import AppiumSupport.BaseTestClass
-import Pages.AndroidPages.model.User
+import Pages.AndroidPages.LoginAndRegistration.User
 import org.junit.Test
 
 class SendMessagesFromListChatTests : BaseTestClass() {

@@ -3,7 +3,6 @@ package Pages.AndroidPages.LoginAndRegistration;
 import AndroidAndIOSHelpers.AndroidBaseClass;
 import Interface.LoginInterface;
 
-import Pages.AndroidPages.model.User;
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.support.PageFactory;
 
@@ -18,21 +17,12 @@ public class LoginScreen extends AndroidBaseClass implements LoginInterface {
     private String errorPhoneID = "com.reposh.dev:id/textinput_error";
     private String codeFieldID = "com.reposh.dev:id/etCode";
     private String confirmCodeBtnID = "com.reposh.dev:id/btnConfirm";
-
-    private String phone9 = "99999999999";
-    private String phone8 = "98888888888";
-    private String phone7 = "97777777777";
     private String code = "4315";
-    private String code911 = "7642";
     private String incorrectPhone = "1111111111";
     private String incorrectCode = "11111";
 
     private String incorrectPhoneError = "Код мобильного оператора должен начинаться с 9";
     private String incorrectCodeError = "Неправильный код. Осталось 4 попытки";
-    private String phone1 = "9111111111";
-    private String phone2 = "9222222222";
-    private String phone3 = "9333333333";
-    private String phone4 = "9444444444";
 
 
     public LoginScreen(AppiumDriver driver) {

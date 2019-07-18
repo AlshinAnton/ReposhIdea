@@ -1,8 +1,8 @@
 package Test.AndroidTests.SearchTests
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.LoginAndRegistration.User
 
-import Pages.AndroidPages.model.User
 import org.junit.Test
 
 import java.lang.Thread.sleep

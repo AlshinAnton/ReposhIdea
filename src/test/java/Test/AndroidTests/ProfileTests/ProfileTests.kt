@@ -1,7 +1,7 @@
 package Test.AndroidTests.ProfileTests
 
 import AppiumSupport.BaseTestClass
-import Pages.AndroidPages.model.User
+import Pages.AndroidPages.LoginAndRegistration.User
 import org.junit.Test
 
 class ProfileTests : BaseTestClass() {

@@ -7,11 +7,11 @@ import org.junit.Test
 
 class Login_testIOS : BaseTestClass() {
 
-    @Test
+  /*  @Test
     fun correctLoginTest() {
         onboardingInterface.waitThenCloseOnBoardingPage()
         loginInterface.login(User.User9())
         tapeInterface.closeTooltips()
 
-    }
+    }*/
 }

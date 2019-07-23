@@ -17,4 +17,8 @@ interface ChatInterface {
 interface ChatListInterface {
     fun waitTestChat()
     fun clickByTestChat()
+
+    fun swipeToBargain()
+    fun swipeToDisputes()
+
 }

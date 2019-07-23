@@ -21,4 +21,14 @@ public class ChatListPageIOS extends IOSBaseClass implements ChatListInterface {
     public void clickByTestChat() {
 
     }
+
+    @Override
+    public void swipeToBargain() {
+
+    }
+
+    @Override
+    public void swipeToDisputes() {
+
+    }
 }

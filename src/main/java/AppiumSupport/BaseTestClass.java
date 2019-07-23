@@ -3,6 +3,7 @@ package AppiumSupport;
 import Interface.*;
 import Pages.AndroidPages.*;
 import Pages.AndroidPages.AddProduct.*;
+import Pages.AndroidPages.Chat.BargainTabInChat;
 import Pages.AndroidPages.Chat.ChatScreen;
 import Pages.AndroidPages.Chat.ChatListPage;
 import Pages.AndroidPages.Checkout.CheckoutOrderScreen;
@@ -78,6 +79,7 @@ public class BaseTestClass extends AppiumBaseClass {
     public CheckoutPaymentConfirmationInterface checkoutPaymentConfirmationInterface;
     public ProfilePageInterface profilePageInterface;
     public SettingsInterface settingsInterface;
+    public BargainScreenInChatInterface bargainScreenInChatInterface;
 
 
     @Before
@@ -206,6 +208,7 @@ public class BaseTestClass extends AppiumBaseClass {
         checkoutOrderInterface = new CheckoutOrderScreen(driver());
         checkoutPaymentConfirmationInterface = new CheckoutPaymentConfirmationScreen(driver());
         profilePageInterface = new ProfileScreen(driver());
+        bargainScreenInChatInterface = new BargainTabInChat(driver());
     }
 
     @After

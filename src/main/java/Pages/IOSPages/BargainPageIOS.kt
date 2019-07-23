@@ -5,6 +5,10 @@ import Interface.BargainInterface
 import io.appium.java_client.AppiumDriver
 
 class BargainPageIOS(driver: AppiumDriver<*>?) : IOSBaseClass(driver), BargainInterface {
+    override fun waitOfferCancelBtn() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
     override fun waitErrorMessage() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }

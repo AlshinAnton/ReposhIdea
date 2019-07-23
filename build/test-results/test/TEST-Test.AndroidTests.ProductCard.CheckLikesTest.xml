@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.AndroidTests.ProductCard.CheckLikesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-15T11:31:01" hostname="Tonis-iMac.local" time="46.977">
+<testsuite name="Test.AndroidTests.ProductCard.CheckLikesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-22T13:03:18" hostname="Tonis-iMac.local" time="46.306">
   <properties/>
-  <testcase name="checkLikesTest" classname="Test.AndroidTests.ProductCard.CheckLikesTest" time="46.977"/>
+  <testcase name="checkLikesTest" classname="Test.AndroidTests.ProductCard.CheckLikesTest" time="46.306"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[июл 15, 2019 2:31:13 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[июл 22, 2019 4:03:29 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

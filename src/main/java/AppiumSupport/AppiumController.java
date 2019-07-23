@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class AppiumController {
 
-    private String pathToAndroidAPK = "/Users/Anton/Desktop/Android/installed/build/outputs/apk/debug/Reposh-debug-1.0.1.apk";
+    private String pathToAndroidAPK = "/Users/Anton/Desktop/Android/installed/build/outputs/apk/debug/Reposh-debug-1.2.1.apk";
     //private String pathToIOSApp = "/Users/Anton/Library/Developer/Xcode/DerivedData/reposh-ghztocakrnkemcamrssxndllxytz/Build/Products/Debug-iphoneos/mamsy360.app";
     private String pathToIOSIpa = "/Users/Anton/Desktop/ReposhIPA/Reposh.ipa";
 
@@ -23,7 +23,7 @@ public class AppiumController {
     private final String WAITACTIVITYAPP = "com.reposh.feature.auth.ui.activity.OnboardingActivity";
 
 
-    public static OS executionOS = OS.IOS_IPHONE_6_PLUS;
+    public static OS executionOS = OS.ANDROID_1_PLUS_5T;
     public static AppiumController instance = new AppiumController();
     public AppiumDriver driver;
     //Device currentDevice;

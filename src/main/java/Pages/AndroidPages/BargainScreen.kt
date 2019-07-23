@@ -13,7 +13,12 @@ class BargainScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Bargai
     private val sendOfferBtnId = "com.reposh.dev:id/offerBtn"
     private val cancelOfferBtnId = "com.reposh.dev:id/btn_offer_cancel"
     private val errorMesssageId = "com.reposh.dev:id/helper_tv"
+    private val checkoutBtnId = "com.reposh.dev:id/btn_checkout"
+    private val offerCancelBtnId = "com.reposh.dev:id/btn_offer_cancel"
+
     private val setPriceFieldText = "Ваша цена"
+    private val frozenBargainText = "Торги остановлены"
+    private val closedBargainText = "Торги закрыты"
 
 
     override fun waitBargainScreen() {
@@ -41,15 +46,19 @@ class BargainScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Bargai
     }
 
     override fun waitFrozenBragainText() {
-
+        waitAndClickAndroidElementByText(frozenBargainText)
     }
 
     override fun waitCloseBargainText() {
-        waitANDROIDElementByTEXT("Торги закрыты")
+        waitANDROIDElementByTEXT(closedBargainText)
     }
 
     override fun clickCreateOrderBtn() {
+        waitAndClickAndroidElementByID(checkoutBtnId)
+    }
 
+    override fun waitOfferCancelBtn() {
+        waitAndClickAndroidElementByID(offerCancelBtnId)
     }
 
     override fun waitCloseBargainAllert() {

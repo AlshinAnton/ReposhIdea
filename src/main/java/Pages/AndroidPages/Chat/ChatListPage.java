@@ -24,4 +24,14 @@ public class ChatListPage extends AndroidBaseClass implements ChatListInterface 
     public void clickByTestChat() {
         clickAndroidElementByText("tester8");
     }
+
+    @Override
+    public void swipeToBargain() {
+        clickAndroidElementByText("Торги");
+    }
+
+    @Override
+    public void swipeToDisputes() {
+        clickAndroidElementByText("Споры");
+    }
 }

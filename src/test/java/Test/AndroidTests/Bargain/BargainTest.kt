@@ -1,4 +1,4 @@
-package Test.AndroidTests.ProductCard
+package Test.AndroidTests.Bargain
 
 import AppiumSupport.BaseTestClass
 import Pages.AndroidPages.LoginAndRegistration.User

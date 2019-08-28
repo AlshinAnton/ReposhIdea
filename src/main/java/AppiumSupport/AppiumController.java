@@ -28,7 +28,7 @@ public class AppiumController {
     private final String WAITACTIVITYAPP = "com.reposh.feature.auth.ui.activity.OnboardingActivity";
 
 
-    public static OS executionOS = OS.ANDROID_1_PLUS_5T ;
+    public static OS executionOS = OS.ANDROID_1_PLUS_6 ;
     public static AppiumController instance = new AppiumController();
     public AppiumDriver driver;
     //Device currentDevice;

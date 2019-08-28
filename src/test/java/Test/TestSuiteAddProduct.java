@@ -9,12 +9,6 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses(
         {
                 AddProductTest.class,
-                AddProductTest.class,
-                AddProductTest.class,
-                AddProductTest.class,
-                AddProductTest.class,
-                AddProductTest.class,
-                AddProductTest.class,
                 AddProductTest.class
         })
 public class TestSuiteAddProduct { }

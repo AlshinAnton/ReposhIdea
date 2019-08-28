@@ -1,3 +1,4 @@
+/*
 package Test;
 
 import Test.AndroidTests.LoginAndRegTests.Login_test;
@@ -37,3 +38,4 @@ public class TestDifferentPorts extends TestNew {
                 }
         }
 }
+*/

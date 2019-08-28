@@ -5,6 +5,7 @@ import AndroidAndIOSHelpers.AndroidBaseClass
 import Interface.CommentsInterface
 import io.appium.java_client.AppiumDriver
 import io.appium.java_client.android.AndroidKeyCode
+import java.awt.event.KeyEvent
 
 class CommentsScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), CommentsInterface {
 
@@ -29,6 +30,10 @@ class CommentsScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Comme
 
     override fun clickBack() {
         clickEnter(AndroidKeyCode.BACK)
+    }
+
+    private fun clickEnter(keyEvent: KeyEvent) {
+
     }
 
 }

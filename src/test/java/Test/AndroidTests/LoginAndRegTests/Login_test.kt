@@ -3,9 +3,13 @@ package Test.AndroidTests.LoginAndRegTests
 import AppiumSupport.BaseTestClass
 import Pages.AndroidPages.LoginAndRegistration.User
 
+import org.junit.Before
+
 import org.junit.Test
 
 class Login_test : BaseTestClass() {
+
+
 
     @Test
     fun correctLoginTest() {

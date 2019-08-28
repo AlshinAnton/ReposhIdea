@@ -1,3 +1,4 @@
+/*
 package Test.TestProjectIO;
 
 import io.testproject.java.sdk.v2.Runner;
@@ -39,4 +40,4 @@ public class Tests {
         runner.run(test);
 
     }
-}
+}*/

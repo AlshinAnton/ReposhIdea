@@ -6,15 +6,20 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.apache.commons.exec.CommandLine;
+import org.apache.commons.exec.DefaultExecuteResultHandler;
+import org.apache.commons.exec.DefaultExecutor;
+import org.apache.commons.exec.ExecuteException;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class AppiumController {
 
-    private String pathToAndroidAPK = "/Users/Anton/Desktop/Android/installed/build/outputs/apk/debug/Reposh-debug-1.2.1.apk";
+    private String pathToAndroidAPK = "/Users/Anton/Desktop/Android/installed/build/outputs/apk/debug/Reposh-debug-1.3.0.apk";
     //private String pathToIOSApp = "/Users/Anton/Library/Developer/Xcode/DerivedData/reposh-ghztocakrnkemcamrssxndllxytz/Build/Products/Debug-iphoneos/mamsy360.app";
     private String pathToIOSIpa = "/Users/Anton/Desktop/ReposhIPA/Reposh.ipa";
 
@@ -23,7 +28,7 @@ public class AppiumController {
     private final String WAITACTIVITYAPP = "com.reposh.feature.auth.ui.activity.OnboardingActivity";
 
 
-    public static OS executionOS = OS.ANDROID_1_PLUS_5T;
+    public static OS executionOS = OS.ANDROID_1_PLUS_5T ;
     public static AppiumController instance = new AppiumController();
     public AppiumDriver driver;
     //Device currentDevice;
@@ -106,6 +111,7 @@ public class AppiumController {
                 capabilities.setCapability(AndroidMobileCapabilityType.APP_WAIT_ACTIVITY, WAITACTIVITYAPP);
                 driver = new AndroidDriver(new URL(URL_APPIUM_ONEPLUS_5T), capabilities);
                 break;
+
             case ANDROID_1_PLUS_6:
                 capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
                 capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.0.2");

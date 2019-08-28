@@ -1,3 +1,4 @@
+/*
 package Test.TestProjectIO;
 
 import Pages.AndroidPages.LoginAndRegistration.LoginScreen;
@@ -30,11 +31,14 @@ public class SampleTest implements AndroidTest {
 
         return tapeScreen.waitSortIcon() ?ExecutionResult.PASSED : ExecutionResult.FAILED;
 
+*/
 /*
         // Run test
         runner.run(test);
-        return null;*/
+        return null;*//*
+
 
 
     }
 }
+*/

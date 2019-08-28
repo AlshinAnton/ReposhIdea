@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test.AndroidTests.LoginAndRegTests.TestNew" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-05T13:50:07" hostname="Tonis-iMac.local" time="24.778">
+  <properties/>
+  <testcase name="LogIn" classname="Test.AndroidTests.LoginAndRegTests.TestNew" time="24.778"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[авг 05, 2019 4:50:18 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

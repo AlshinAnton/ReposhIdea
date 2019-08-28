@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" tests="3" skipped="0" failures="2" errors="0" timestamp="2019-07-22T13:29:09" hostname="Tonis-iMac.local" time="194.238">
+<testsuite name="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2019-08-05T14:24:46" hostname="Tonis-iMac.local" time="170.231">
   <properties/>
-  <testcase name="clearSearchHistoryInBrands" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="43.887"/>
-  <testcase name="clearSearchHistoryInPeople" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="73.453">
-    <failure message="org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: 'unknown', revision: 'unknown', time: 'unknown'&#10;System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:47:477a:6cf9:330%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_91'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: One+5t, fullReset: true, noReset: false, platformName: android, platformVersion: 9, udid: 95a4dfae}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: 95a4dfae, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: 95a4dfae, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 95a4dfae, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: 8cd02beb-41a0-4898-b99b-9cf460bc45da&#10;*** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;tester&quot;)}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+  <testcase name="clearSearchHistoryInCategory" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="52.073"/>
+  <testcase name="clearSearchHistoryInBrands" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="45.13"/>
+  <testcase name="clearSearchHistoryInPeople" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="73.028">
+    <failure message="org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: 'unknown', revision: 'unknown', time: 'unknown'&#10;System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:1456:dc4f:4fa7:feaa%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_91'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: One+5t, fullReset: true, noReset: false, platformName: android, platformVersion: 9, udid: 95a4dfae}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: 95a4dfae, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: 95a4dfae, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 95a4dfae, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: b8f7ef4e-1215-43cf-931f-ce6b0fa5f4cb&#10;*** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;tester&quot;)}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:47:477a:6cf9:330%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_91'
+System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:1456:dc4f:4fa7:feaa%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_91'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: One+5t, fullReset: true, noReset: false, platformName: android, platformVersion: 9, udid: 95a4dfae}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: 95a4dfae, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: 95a4dfae, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 95a4dfae, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 8cd02beb-41a0-4898-b99b-9cf460bc45da
+Session ID: b8f7ef4e-1215-43cf-931f-ce6b0fa5f4cb
 *** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;tester&quot;)}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -83,108 +84,12 @@ Session ID: 8cd02beb-41a0-4898-b99b-9cf460bc45da
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="clearSearchHistoryInCategory" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="76.898">
-    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.reposh.dev:id/buttonSearch (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.reposh.dev:id/buttonSearch (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at AndroidAndIOSHelpers.AndroidBaseClass.waitAndClickAndroidElementByID(AndroidBaseClass.java:87)
-	at Pages.AndroidPages.Search.SearchScreen.waitAndClickSearchIconTop(SearchScreen.kt:46)
-	at Test.AndroidTests.SearchTests.ClearSearchHistoryTest.clearSearchHistoryInCategory(ClearSearchHistoryTest.kt:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:47:477a:6cf9:330%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.5', java.version: '1.8.0_91'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: One+5t, fullReset: true, noReset: false, platformName: android, platformVersion: 9, udid: 95a4dfae}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: 95a4dfae, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: 95a4dfae, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 95a4dfae, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: ffc2ddd1-7434-47f4-aeb6-4c970e84309c
-*** Element info: {Using=id, value=com.reposh.dev:id/buttonSearch}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
-	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 52 more
-</failure>
-  </testcase>
   <system-out><![CDATA[R1-255 - AND: Проверять на уникальность/помеченность пользователя при переходя в профиль из поиска]]></system-out>
-  <system-err><![CDATA[июл 22, 2019 4:29:21 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[авг 05, 2019 5:24:57 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-июл 22, 2019 4:30:05 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+авг 05, 2019 5:25:49 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-июл 22, 2019 4:31:18 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+авг 05, 2019 5:26:34 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

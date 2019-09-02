@@ -2,6 +2,7 @@ package Test.AndroidTests.LoginAndRegTests
 
 import AppiumSupport.BaseTestClass
 import Pages.AndroidPages.LoginAndRegistration.User
+import io.appium.java_client.pagefactory.AndroidBy
 
 import org.junit.Before
 
@@ -10,7 +11,7 @@ import org.junit.Test
 class Login_test : BaseTestClass() {
 
 
-
+ @AndroidBy
     @Test
     fun correctLoginTest() {
         onboardingInterface.waitThenCloseOnBoardingPage()
@@ -18,7 +19,7 @@ class Login_test : BaseTestClass() {
         tapeInterface.closeTooltips()
 
     }
-
+    @AndroidBy
     @Test
     fun incorrectPhoneNumber() {
         onboardingInterface.waitThenCloseOnBoardingPage()
@@ -27,7 +28,7 @@ class Login_test : BaseTestClass() {
         loginInterface.waitErrorPhoneFormat()
         loginInterface.assertErrorPhoneFormat()
     }
-
+    @AndroidBy
     @Test
     fun incorrectCode() {
         onboardingInterface.waitThenCloseOnBoardingPage()

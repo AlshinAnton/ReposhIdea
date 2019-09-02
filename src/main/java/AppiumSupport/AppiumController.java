@@ -19,26 +19,10 @@ import java.util.concurrent.TimeUnit;
 
 public class AppiumController {
 
-    private String pathToAndroidAPK = "/Users/Anton/Desktop/Android/installed/build/outputs/apk/debug/Reposh-debug-1.3.0.apk";
-    //private String pathToIOSApp = "/Users/Anton/Library/Developer/Xcode/DerivedData/reposh-ghztocakrnkemcamrssxndllxytz/Build/Products/Debug-iphoneos/mamsy360.app";
-    private String pathToIOSIpa = "/Users/Anton/Desktop/ReposhIPA/Reposh.ipa";
-
-    private final String PACKAGEAPP = "com.reposh.dev";
-    private final String ACTIVITYAPP = "com.reposh.presentation.ui.activity.MainActivity";
-    private final String WAITACTIVITYAPP = "com.reposh.feature.auth.ui.activity.OnboardingActivity";
-
-
     public static OS executionOS = OS.ANDROID_1_PLUS_6 ;
     public static AppiumController instance = new AppiumController();
     public AppiumDriver driver;
-    //Device currentDevice;
 
-    private final String HUB_HOST = "http://localhost:4445/wd/hub";
-    private final String URL_APPIUM_ONEPLUS_5T = "http://127.0.0.1:4723/wd/hub";
-    private final String URL_APPIUM_ONEPLUS_6 = "http://127.0.0.1:4724/wd/hub";
-    private final String URL_APPIUM_NEXUS = "http://127.0.0.1:4725/wd/hub";
-    private final String URL_APPIUM_XIAOMI = "http://127.0.0.1:4726/wd/hub";
-    private static final String URL_GALAXY_S8 = "http://127.0.0.1:4727/wd/hub";;
 
 
     public enum OS {
@@ -56,23 +40,19 @@ public class AppiumController {
     }
 
     void start() throws MalformedURLException {
-        /*DeviceInfo deviceInfo = new DeviceInfoImpl(DeviceType.ALL);
-        try {
-            for (int i = 0; i < deviceInfo.getDevices().size(); i++) {
-                currentDevice = deviceInfo.getDevices().get(i);
-                System.out.println("device #" + i + "\n"
-                        + " udid = " + currentDevice.getUniqueDeviceID()
-                        + "\n Version = " + currentDevice.getProductVersion()
-                        + "\n OSVersion = " + currentDevice.getDeviceProductName()
-                        + "\n Build version = " + currentDevice.getBuildVersion()
-                        + "\n Model Number = " + currentDevice.getModelNumber()
-                        + "\n Serial Number = " + currentDevice.getSerialNumber()
-                        + "\n");
-                executionOS = currentDevice.getDeviceProductName().equals("Android") ? OS.ANDROID_OPPOA37 : OS.IOS_IPHONE_6_PLUS_SIMULATOR;
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
+
+        String pathToAndroidAPK = "/Users/Anton/Desktop/Android/installed/build/outputs/apk/debug/Reposh-debug-1.3.0.apk";
+        //private String pathToIOSApp = "/Users/Anton/Library/Developer/Xcode/DerivedData/reposh-ghztocakrnkemcamrssxndllxytz/Build/Products/Debug-iphoneos/mamsy360.app";
+        String pathToIOSIpa = "/Users/Anton/Desktop/ReposhIPA/Reposh.ipa";
+        String PACKAGEAPP = "com.reposh.dev";
+        String ACTIVITYAPP = "com.reposh.presentation.ui.activity.MainActivity";
+        String WAITACTIVITYAPP = "com.reposh.feature.auth.ui.activity.OnboardingActivity";
+        String URL_APPIUM_ONEPLUS_5T = "http://127.0.0.1:4723/wd/hub";
+        String URL_APPIUM_ONEPLUS_6 = "http://127.0.0.1:4724/wd/hub";
+        String URL_APPIUM_NEXUS = "http://127.0.0.1:4725/wd/hub";
+        String URL_APPIUM_XIAOMI = "http://127.0.0.1:4726/wd/hub";
+        String HUB_HOST = "http://localhost:4445/wd/hub";
+        String URL_GALAXY_S8 = "http://127.0.0.1:4727/wd/hub";
 
         if (driver != null) {
             System.out.println("Драйвер не обнулился");
@@ -183,11 +163,6 @@ public class AppiumController {
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
                 driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
                 driver.switchTo().alert().accept();
-                try {
-                    Thread.sleep(4000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
                 break;
 
             case IOS_IPHONE_6_PLUS_SIMULATOR:
@@ -231,7 +206,6 @@ public class AppiumController {
                 capabilities.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS,true);
                 capabilities.setCapability("simpleIsVisibleCheck", false);
                 driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-
                 //driver.switchTo().alert().accept(); = не работает
                 break;
             case IOS_IPHONE_5S:
@@ -249,13 +223,7 @@ public class AppiumController {
                 capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
                 driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
                 driver.switchTo().alert().accept();
-                try {
-                    Thread.sleep(4000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
                 break;
-
         }
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
@@ -267,3 +235,22 @@ public class AppiumController {
         }
     }
 }
+
+//Можно найти подключенные устройства
+/*DeviceInfo deviceInfo = new DeviceInfoImpl(DeviceType.ALL);
+        try {
+            for (int i = 0; i < deviceInfo.getDevices().size(); i++) {
+                currentDevice = deviceInfo.getDevices().get(i);
+                System.out.println("device #" + i + "\n"
+                        + " udid = " + currentDevice.getUniqueDeviceID()
+                        + "\n Version = " + currentDevice.getProductVersion()
+                        + "\n OSVersion = " + currentDevice.getDeviceProductName()
+                        + "\n Build version = " + currentDevice.getBuildVersion()
+                        + "\n Model Number = " + currentDevice.getModelNumber()
+                        + "\n Serial Number = " + currentDevice.getSerialNumber()
+                        + "\n");
+                executionOS = currentDevice.getDeviceProductName().equals("Android") ? OS.ANDROID_OPPOA37 : OS.IOS_IPHONE_6_PLUS_SIMULATOR;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/

@@ -17,7 +17,6 @@ class Login_test : BaseTestClass() {
         onboardingInterface.waitThenCloseOnBoardingPage()
         loginInterface.login(User.User1())
         tapeInterface.closeTooltips()
-
     }
     @AndroidBy
     @Test

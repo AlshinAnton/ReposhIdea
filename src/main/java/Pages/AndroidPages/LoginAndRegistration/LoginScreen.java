@@ -3,13 +3,21 @@ package Pages.AndroidPages.LoginAndRegistration;
 import AndroidAndIOSHelpers.AndroidBaseClass;
 import Interface.LoginInterface;
 
+import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.pagefactory.AndroidBy;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.jetbrains.annotations.NotNull;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class LoginScreen extends AndroidBaseClass implements LoginInterface {
+    public LoginScreen(AppiumDriver driver) {
+        super(driver);
+        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+    }
 
     //id
     private String receiveCodeBtnID = "com.reposh.dev:id/btnCode";
@@ -24,11 +32,6 @@ public class LoginScreen extends AndroidBaseClass implements LoginInterface {
     private String incorrectPhoneError = "Код мобильного оператора должен начинаться с 9";
     private String incorrectCodeError = "Неправильный код. Осталось 4 попытки";
 
-
-    public LoginScreen(AppiumDriver driver) {
-        super(driver);
-        PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-    }
 
     @Override
     public void enterPhoneNumber(String phoneNum) {

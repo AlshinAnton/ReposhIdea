@@ -28,8 +28,7 @@ public abstract class AndroidBaseClass {
 
     protected MobileElement findChildElementByID(String parentId, String childId) {
         MobileElement element = (MobileElement) driver.findElement(MobileBy.id(parentId));
-        MobileElement childElement = element.findElement(MobileBy.id(childId));
-        return childElement;
+        return element.findElement(MobileBy.id(childId));
     }
 
     protected void swipeToRight(double startPercentage, double endPercentage, double anchorPercentage) {
@@ -55,21 +54,18 @@ public abstract class AndroidBaseClass {
 
     protected MobileElement findChildElementByIDAndText(String parentId, String childText) {
         MobileElement element = (MobileElement) driver.findElement(MobileBy.id(parentId));
-        MobileElement childElement = element.findElement(MobileBy.AndroidUIAutomator("new UiSelector().text(\"" + childText + "\")"));
-        return childElement;
+        return element.findElement(MobileBy.AndroidUIAutomator("new UiSelector().text(\"" + childText + "\")"));
     }
-
 
     protected void assertTextFromChildElementByID(String parentID, String childID, String expectedMessage) {
         String textFromChildElement = findChildElementByID(parentID, childID).getText();
         assertTextFromElementWithID(textFromChildElement, expectedMessage);
     }
 
-    protected MobileElement find2StageChildElementByID(String parentId, String childId, String secondChildId) {
+    private MobileElement find2StageChildElementByID(String parentId, String childId, String secondChildId) {
         MobileElement element = (MobileElement) driver.findElement(MobileBy.id(parentId));
         MobileElement element2 = element.findElement(MobileBy.id(childId));
-        MobileElement childElement2 = element2.findElement(MobileBy.id(secondChildId));
-        return childElement2;
+        return element2.findElement(MobileBy.id(secondChildId));
     }
 
     protected void sendKeysTo2StageChildElementWithIds(String parentId, String childId, String secondChildId, String text) {
@@ -102,25 +98,20 @@ public abstract class AndroidBaseClass {
         WebElement mob = driver.findElement(By.name("Mobile Number"));
         mob.click();
         mob.clear();
-
         /*WebElement text = driver.findElement(By.xpath("//UIATextField[1]"));
         text.sendKeys("12");
         text.clear();*/
-
         /*while (!textField().getText().isEmpty()) {
             TouchAction touchAction = new TouchAction(driver);
             touchAction.longPress(textField());
             driver.getKeyboard().sendKeys(Keys.DELETE);
         }*/
-
         /*WebElement element2 = appiumDriver.findElement(By.xpath(element));
         element2.sendKeys(Keys.CONTROL + "a");
         element2.sendKeys(Keys.DELETE);*/
     }
 
-    protected void clearFieldIdQuery() {
-
-    }
+    protected void clearFieldIdQuery() { }
 
     //ТЕКСТ
     protected void waitAndClickAndroidElementByText(String text) {
@@ -150,17 +141,13 @@ public abstract class AndroidBaseClass {
     protected String getTextFromElementWithId(String id) {
         MobileElement element = ((AndroidDriver<MobileElement>) driver).findElementByAndroidUIAutomator(
                 "new UiSelector().resourceId(\"" + id + "\")");
-        String text = element.getText();
-
-        return text;
+        return element.getText();
     }
 
     protected String getTextFromElementWithIdAndInstance(String id, int instance) {
         MobileElement element = ((AndroidDriver<MobileElement>) driver).findElementByAndroidUIAutomator(
                 "new UiSelector().resourceId(\"" + id + "\").instance(" + instance + ")");
-        String text = element.getText();
-
-        return text;
+        return element.getText();
     }
 
     protected void swipeVerticalToElementWithTextAndClick(String someText) {
@@ -209,14 +196,11 @@ public abstract class AndroidBaseClass {
 
     private void assertTextFromElementWithID(String resID, String erMessage) {
         String str = driver.findElement(MobileBy.AndroidUIAutomator(
-                String.format("new UiSelector().resourceId(\"" + resID + "\")"))).getText();
+                "new UiSelector().resourceId(\"" + resID + "\")")).getText();
         assert str.equals(erMessage);
     }
 
-
-
-
-    protected void clearFieldWithIdAndInstance(String resID, String instance) throws InterruptedException {
+    private void clearFieldWithIdAndInstance(String resID, String instance) throws InterruptedException {
         WebElement element;
         element = driver.findElement(MobileBy.AndroidUIAutomator(
                 ("new UiSelector().resourceId(\"" + resID + "\").instance(" + instance + ")")));
@@ -225,8 +209,6 @@ public abstract class AndroidBaseClass {
         element.sendKeys(Keys.CONTROL + "a");
         element.sendKeys(Keys.DELETE);
     }
-
-
 
     protected void assertTemplateStringsByIdAndInstance(String getTextFromElementWithID, int instance, String whatWeAreWaiting, String errorMes) {
         try {
@@ -275,7 +257,6 @@ public abstract class AndroidBaseClass {
             System.out.println("Сообщение: " + errorMessage + " отсутствует на экране");
         }
     }
-
 
     protected void swipeHorizontalToTab(int tabsCount, String tabName) {
         for (int i = 0; i < tabsCount; i++) {

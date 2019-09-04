@@ -10,7 +10,6 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 public class OnBoardingScreen extends AndroidBaseClass implements OnboardingInterface {
 
     String enterWithPhone = "com.reposh.dev:id/btnEnter";
-    String enterWithMamsy = "com.reposh.dev:id/btnEnterMamsy";
 
     public OnBoardingScreen(AppiumDriver driver) {
         super(driver);

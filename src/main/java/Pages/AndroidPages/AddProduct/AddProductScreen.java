@@ -2,6 +2,8 @@ package Pages.AndroidPages.AddProduct;
 
 import AndroidAndIOSHelpers.AndroidBaseClass;
 import Interface.AddProductInterface;
+import org.jetbrains.annotations.NonNls;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.support.PageFactory;
 import java.util.Random;
 import io.appium.java_client.AppiumDriver;
@@ -17,24 +19,39 @@ public class AddProductScreen extends AndroidBaseClass implements AddProductInte
     }
 
     String random = String.valueOf((int) (Math.random() * 1000) + 1);
+    @NonNls
     private String errorPriceMessageID = "com.reposh.dev:id/helper_tv";
+    @NonNls
     private String errorPhotoMessageID = "com.reposh.dev:id/tv_error";
-
+    @NonNls
     private String tooltipID = "com.reposh.dev:id/tooltipText";
+    @NonNls
     private String addPhotoID = "com.reposh.dev:id/iv_add_photo";
+    @NonNls
     private String productNameAndDescriptionFieldsID = "com.reposh.dev:id/edit_text";
+    @NonNls
     private String categoryID = "com.reposh.dev:id/category_ttv";
+    @NonNls
     private String sizeID = "com.reposh.dev:id/size_ttv";
+    @NonNls
     private String brandsID = "com.reposh.dev:id/brand_ttv";
+    @NonNls
     private String colorID = "com.reposh.dev:id/layout_color";
+    @NonNls
     private String conditionID = "com.reposh.dev:id/condition_ttv";
+    @NonNls
     private String mamsyProtectSwitchID = "com.reposh.dev:id/protectSwitch";
+    @NonNls
     private String chooseDeliveryID = "com.reposh.dev:id/edit_text";
+    @NonNls
     private String saveToDraftBtnID = "com.reposh.dev:id/postAsDraftBtn";
+    @NonNls
     private String deleteBtnID = "com.reposh.dev:id/deleteBtn";
+    @NonNls
     private String deleteIconFromField = "com.reposh.dev:id/clearBtn";
 
 
+    @NonNls
     private String locationID = "com.reposh.dev:id/layout_location";
     private String publishID = "";
     String itemName;
@@ -62,6 +79,7 @@ public class AddProductScreen extends AndroidBaseClass implements AddProductInte
         return randomStrings;
     }
 
+    @NotNull
     @Override
     public String getProductName() {
         return itemName;

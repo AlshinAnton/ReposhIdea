@@ -10,7 +10,6 @@ import org.junit.Test
 
 class Login_test : BaseTestClass() {
 
-
  @AndroidBy
     @Test
     fun correctLoginTest() {

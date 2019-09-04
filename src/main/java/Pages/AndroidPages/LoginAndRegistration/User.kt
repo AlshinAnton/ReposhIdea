@@ -4,7 +4,7 @@ sealed class User constructor(
         open val phone: String,
         open val code: String) {
 
-    class User1(override val phone: String = "9111111111",
+    class User1(override val phone: String = " git s9111111111",
                 override val code: String = "7642") : User(phone, code)
 
     class User2(override val phone: String = "9222222222",

@@ -11,7 +11,6 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 public class AddProductOrDraftConfirmationScreen extends AndroidBaseClass implements AddProductOrDraftConfirmationInterface {
 
     private String checkProductBtnID = "com.reposh.dev:id/showPostBtn";
-    private String moveToMyProductBtnID = "com.reposh.dev:id/showProducts";
 
     public AddProductOrDraftConfirmationScreen(AppiumDriver driver) {
         super(driver);
@@ -30,6 +29,7 @@ public class AddProductOrDraftConfirmationScreen extends AndroidBaseClass implem
 
     @Override
     public void clickMoveToMyProductsOrDrafts() {
+        String moveToMyProductBtnID = "com.reposh.dev:id/showProducts";
         waitAndClickAndroidElementByID(moveToMyProductBtnID);
     }
 

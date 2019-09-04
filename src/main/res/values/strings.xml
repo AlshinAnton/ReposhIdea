@@ -1,0 +1,18 @@
+<recources>
+    <!--Phone numbers-->
+    <string name="phone_1">9111111111</string>
+    <string name="phone_2">9222222222</string>
+    <string name="phone_3">9333333333</string>
+    <string name="phone_4">9444444444</string>
+    <string name="phone_7">9777777777</string>
+    <string name="phone_8">9888888888</string>
+    <string name="phone_9">9999999999</string>
+
+    <!--Login code-->
+    <string name="code_1">7642</string>
+    <string name="code_9">4315</string>
+
+    
+</recources>
+
+

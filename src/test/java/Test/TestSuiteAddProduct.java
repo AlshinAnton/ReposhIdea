@@ -1,4 +1,3 @@
-/*
 package Test;
 
 import Test.AndroidTests.AddDeletePublishProductTests.AddProductTest;
@@ -9,7 +8,20 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses(
         {
                 AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
+                AddProductTest.class,
                 AddProductTest.class
         })
 public class TestSuiteAddProduct { }
-*/

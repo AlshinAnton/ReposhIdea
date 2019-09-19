@@ -269,4 +269,29 @@ public class AddProductPageIOS extends IOSBaseClass implements AddProductInterfa
     public void swipeToTop() {
 
     }
+
+    @Override
+    public void setProductName_RussianPost() {
+
+    }
+
+    @Override
+    public void setProductNameAllDeliveryes() {
+
+    }
+
+    @Override
+    public void swipeToRussianPost() {
+
+    }
+
+    @Override
+    public void clickRussianPost() {
+
+    }
+
+    @Override
+    public void clickBySwitchAllShippingMethods() {
+
+    }
 }

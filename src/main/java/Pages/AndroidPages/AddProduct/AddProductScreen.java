@@ -19,36 +19,22 @@ public class AddProductScreen extends AndroidBaseClass implements AddProductInte
     }
 
     String random = String.valueOf((int) (Math.random() * 1000) + 1);
-    @NonNls
     private String errorPriceMessageID = "com.reposh.dev:id/helper_tv";
-    @NonNls
     private String errorPhotoMessageID = "com.reposh.dev:id/tv_error";
-    @NonNls
     private String tooltipID = "com.reposh.dev:id/tooltipText";
-    @NonNls
     private String addPhotoID = "com.reposh.dev:id/iv_add_photo";
-    @NonNls
     private String productNameAndDescriptionFieldsID = "com.reposh.dev:id/edit_text";
-    @NonNls
     private String categoryID = "com.reposh.dev:id/category_ttv";
-    @NonNls
     private String sizeID = "com.reposh.dev:id/size_ttv";
-    @NonNls
     private String brandsID = "com.reposh.dev:id/brand_ttv";
-    @NonNls
     private String colorID = "com.reposh.dev:id/layout_color";
-    @NonNls
     private String conditionID = "com.reposh.dev:id/condition_ttv";
-    @NonNls
     private String mamsyProtectSwitchID = "com.reposh.dev:id/protectSwitch";
-    @NonNls
     private String chooseDeliveryID = "com.reposh.dev:id/edit_text";
-    @NonNls
     private String saveToDraftBtnID = "com.reposh.dev:id/postAsDraftBtn";
-    @NonNls
     private String deleteBtnID = "com.reposh.dev:id/deleteBtn";
-    @NonNls
     private String deleteIconFromField = "com.reposh.dev:id/clearBtn";
+    private String allShippingSwitchId = "com.reposh.dev:id/allShippingMethodsSwitch";
 
 
     @NonNls
@@ -56,8 +42,9 @@ public class AddProductScreen extends AndroidBaseClass implements AddProductInte
     private String publishID = "";
     String itemName;
 
-    private String dpdCourierTxt = "Курьер";
-    private String dpdPostamatTxt = "Пункт выдачи / Постамат";
+    private String dpdCourierTxt = "Курьер Dpd";
+    private String dpdPostamatTxt = "ПВЗ";
+    private String russianPostText = "Отделение Почты России";
     private String subsidyTooglId = "com.reposh.dev:id/toggle";
 
 
@@ -290,6 +277,16 @@ public class AddProductScreen extends AndroidBaseClass implements AddProductInte
     }
 
     @Override
+    public void swipeToRussianPost() {
+        swipeVerticalToElementWithText(russianPostText);
+    }
+
+    @Override
+    public void clickRussianPost() {
+        clickAndroidElementByText(russianPostText);
+    }
+
+    @Override
     public void setProductNameCourier() {
         itemName = "Товар с доставкой курьер";
         //swipeVerticalToElementWithText("Фото товара");
@@ -322,5 +319,26 @@ public class AddProductScreen extends AndroidBaseClass implements AddProductInte
     @Override
     public void swipeToTop() {
         swipeVerticalToElementWithText("Фото товара");
+    }
+
+    @Override
+    public void setProductName_RussianPost() {
+        itemName = "Товар с доставкой Почта России";
+        clickProductName();
+        sendKeysToAndroidElementByIDAndInstance(productNameAndDescriptionFieldsID, 4,   itemName);
+    }
+
+    @Override
+    public void setProductNameAllDeliveryes() {
+        itemName = "Товар с доставкой курьер, постамат, почта";
+        //swipeVerticalToElementWithText("Фото товара");
+        clickProductName();
+        sendKeysToAndroidElementByIDAndInstance(productNameAndDescriptionFieldsID, 4,   itemName);
+    }
+
+    @Override
+    public void clickBySwitchAllShippingMethods() {
+        swipeVerticalToElementWithText("Опубликовать");
+        waitAndClickAndroidElementByID(allShippingSwitchId);
     }
 }

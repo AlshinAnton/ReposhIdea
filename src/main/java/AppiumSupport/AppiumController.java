@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 
 public class AppiumController {
 
-    public static OS executionOS = OS.ANDROID_1_PLUS_6 ;
+    public static OS executionOS = OS.ANDROID_1_PLUS_5T ;
     public static AppiumController instance = new AppiumController();
     public AppiumDriver driver;
 
@@ -38,7 +38,7 @@ public class AppiumController {
     }
 
     void start() throws MalformedURLException {
-        String pathToAndroidAPK = "/Users/Anton/Desktop/Android/installed/build/outputs/apk/debug/Reposh-debug-1.3.0.apk";
+        String pathToAndroidAPK = "/Users/Anton/Desktop/Android/installed/build/outputs/apk/debug/Reposh-debug-1.3.1.apk";
         //private String pathToIOSApp = "/Users/Anton/Library/Developer/Xcode/DerivedData/reposh-ghztocakrnkemcamrssxndllxytz/Build/Products/Debug-iphoneos/mamsy360.app";
         String pathToIOSIpa = "/Users/Anton/Desktop/ReposhIPA/Reposh.ipa";
         String PACKAGEAPP = "com.reposh.dev";

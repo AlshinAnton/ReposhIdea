@@ -2,6 +2,7 @@ package Pages.AndroidPages.model
 
 import AppiumSupport.BaseTestClass
 import Pages.AndroidPages.LoginAndRegistration.User
+import com.sun.org.apache.xpath.internal.operations.Bool
 
 // Если не  получится публиковать продукт, то надо отдельно  создавать товары с курьером и постаматом , последующий сценарий будетзависеть от имени товара
 data class CreateProductTemplate(val userTemplate: UserTemplate,
@@ -21,12 +22,16 @@ data class CreateProductTemplate(val userTemplate: UserTemplate,
 
 data class NameTemplate(val nameDpdCourier: Boolean = false,
                         val nameDpdPostamat: Boolean = false,
-                        val nameBothDpd: Boolean = false)
+                        val nameRussianPost: Boolean = false,
+                        val nameBothDpd: Boolean = false,
+                        val nameAllDeliveries: Boolean = true)
 
 data class SizeTemplate(val oneSize: Boolean = true)
 data class DeliveryTemplate(val dpdCourier: Boolean = false,
                             val dpdPostamat: Boolean = false,
-                            val both: Boolean = false)
+                            val russianPost : Boolean = false,
+                            val both: Boolean = false,
+                            val allDeliveries: Boolean = true)
 
 data class UserTemplate(val user: User)
 
@@ -91,6 +96,10 @@ fun BaseTestClass.addProductByTemplate(template: CreateProductTemplate) {
         addProductInterface.setProductNamePostamat()
     } else if (template.itemAndDescription.nameBothDpd) {
         addProductInterface.setproductNameBothDeliveries()
+    } else if (template.itemAndDescription.nameRussianPost) {
+        addProductInterface.setProductName_RussianPost()
+    } else if (template.itemAndDescription.nameAllDeliveries) {
+        addProductInterface.setProductNameAllDeliveryes()
     }
     addProductInterface.clickEnter()
     addProductInterface.sendKeysToProductDescriptionField()
@@ -99,16 +108,26 @@ fun BaseTestClass.addProductByTemplate(template: CreateProductTemplate) {
     if (template.useDelivery) {
         if (template.deliveryTemplate.dpdCourier) {
             addProductInterface.swipeToDpdCourier()
+            addProductInterface.clickBySwitchAllShippingMethods()
             addProductInterface.clickDpdCourier()
         } else if (template.deliveryTemplate.dpdPostamat) {
             addProductInterface.swipeToDpdPostamat()
+            addProductInterface.clickBySwitchAllShippingMethods()
             addProductInterface.clickDpdPostamat()
+        } else if (template.deliveryTemplate.russianPost) {
+            addProductInterface.swipeToRussianPost()
+            addProductInterface.clickBySwitchAllShippingMethods()
+            addProductInterface.clickRussianPost()
         } else if (template.deliveryTemplate.both) {
             addProductInterface.swipeToDpdCourier()
+            addProductInterface.clickBySwitchAllShippingMethods()
             addProductInterface.clickDpdCourier()
             addProductInterface.swipeToDpdPostamat()
             addProductInterface.clickDpdPostamat()
-        } else {
+            addProductInterface.swipeToRussianPost()
+            addProductInterface.clickRussianPost()
+        } else if (template.deliveryTemplate.russianPost) {
+
         }
         addProductInterface.clickPublish()
     }

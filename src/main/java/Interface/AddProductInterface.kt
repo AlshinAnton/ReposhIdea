@@ -38,11 +38,16 @@ interface AddProductInterface {
     fun clickDpdCourier()
     fun swipeToDpdPostamat()
     fun clickDpdPostamat()
+    fun swipeToRussianPost()
+    fun clickRussianPost()
     fun setProductNameCourier()
     fun setProductNamePostamat()
     fun setproductNameBothDeliveries()
     fun swipeToDescription()
     fun swipeToTop()
+    fun setProductName_RussianPost()
+    fun setProductNameAllDeliveryes()
+    fun clickBySwitchAllShippingMethods()
 }
 
 interface AddProductOrDraftConfirmationInterface {

@@ -8,7 +8,7 @@ import org.junit.Test
 
 class AddProductTest : BaseTestClass() {
 
-    @Test
+/*    @Test
     //@DisplayName("Publish product only with necessary fields = photo, name, description, brand, category, size")
     fun publishProductWithDPDCourier() {
                 val createProductTemplate = CreateProductTemplate(
@@ -69,6 +69,50 @@ class AddProductTest : BaseTestClass() {
                 useTariff = false,
                 sizeTemplate = SizeTemplate(oneSize = true),
                 deliveryTemplate = DeliveryTemplate(both = true)
+        )
+        addProductByTemplate(createProductTemplate)
+        publish()
+    }*/
+
+    @Test
+    //@DisplayName("Publish product only with necessary fields = photo, name, description, brand, category, size")
+    fun publishProductWithRussianPost() {
+        val createProductTemplate = CreateProductTemplate(
+                UserTemplate(User.User1()),
+                usePhoto = true,
+                itemAndDescription = NameTemplate(nameRussianPost = true),
+                useCategory = true,
+                useSize = false,
+                useBrand = true,
+                useCondition = false,
+                usePurchasePriceAndSellingPrice = true,
+                useLocation = true,
+                useDelivery = true,
+                useTariff = false,
+                sizeTemplate = SizeTemplate(oneSize = true),
+                deliveryTemplate = DeliveryTemplate(russianPost = true)
+        )
+        addProductByTemplate(createProductTemplate)
+        publish()
+    }
+
+    @Test
+    //@DisplayName("Publish product only with necessary fields = photo, name, description, brand, category, size")
+    fun publishProductWithAllDeliveries() {
+        val createProductTemplate = CreateProductTemplate(
+                UserTemplate(User.User1()),
+                usePhoto = true,
+                itemAndDescription = NameTemplate(nameAllDeliveries = true),
+                useCategory = true,
+                useSize = false,
+                useBrand = true,
+                useCondition = false,
+                usePurchasePriceAndSellingPrice = true,
+                useLocation = true,
+                useDelivery = true,
+                useTariff = false,
+                sizeTemplate = SizeTemplate(oneSize = true),
+                deliveryTemplate = DeliveryTemplate(allDeliveries = true)
         )
         addProductByTemplate(createProductTemplate)
         publish()

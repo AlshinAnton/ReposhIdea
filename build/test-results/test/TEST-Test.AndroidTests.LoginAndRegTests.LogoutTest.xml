@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.AndroidTests.LoginAndRegTests.LogoutTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-24T11:57:08" hostname="Tonis-iMac.local" time="34.653">
+<testsuite name="Test.AndroidTests.LoginAndRegTests.LogoutTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-24T13:58:53" hostname="Tonis-iMac.local" time="35.033">
   <properties/>
-  <testcase name="logoutTest" classname="Test.AndroidTests.LoginAndRegTests.LogoutTest" time="34.653"/>
+  <testcase name="logoutTest" classname="Test.AndroidTests.LoginAndRegTests.LogoutTest" time="35.033"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[сен 24, 2019 2:57:19 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[сен 24, 2019 4:59:04 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

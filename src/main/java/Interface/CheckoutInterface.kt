@@ -31,6 +31,8 @@ interface CheckoutInterface {
     fun assertItemPrice()
     fun assertDeliveryPrice()
     fun assertTotalPrice()
+    fun chooseRussainPost()
+    fun choosePostamatAddress()
 }
 
 interface CheckoutOrderInterface {

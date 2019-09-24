@@ -13,6 +13,7 @@ class CheckoutPageScreen (driver: AppiumDriver<*>) : AndroidBaseClass(driver), C
 
     private val checkBoxId = "com.reposh.dev:id/checkbox"
     private val payBtnID = "com.reposh.dev:id/actionButton"
+    private val choosePostamatAddressID = "com.reposh.dev:id/addressBigTitledTextWidget"
 
     override fun waitCityField() {
         waitANDROIDElementByTEXT("Город")
@@ -32,12 +33,21 @@ class CheckoutPageScreen (driver: AppiumDriver<*>) : AndroidBaseClass(driver), C
         clickAndroidElementByIDAndInstance(checkBoxId, 1)
     }
 
+    override fun chooseRussainPost() {
+        waitAndroidViewByIdAndInstance(checkBoxId, 0)
+        clickAndroidElementByIDAndInstance(checkBoxId, 0)
+    }
+
     override fun waitaddressField() {
         waitAndroidViewById("com.reposh.dev:id/addressTV")
     }
 
     override fun chooseAnotherAddress() {
         clickAndroidElementByText("Выбрать другой адрес")
+    }
+
+    override fun choosePostamatAddress() {
+        waitAndClickAndroidElementByID(choosePostamatAddressID)
     }
 
     override fun clickByNameField() {

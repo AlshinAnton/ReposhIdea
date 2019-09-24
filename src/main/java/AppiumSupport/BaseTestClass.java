@@ -6,10 +6,7 @@ import Pages.AndroidPages.AddProduct.*;
 import Pages.AndroidPages.Chat.BargainTabInChat;
 import Pages.AndroidPages.Chat.ChatScreen;
 import Pages.AndroidPages.Chat.ChatListPage;
-import Pages.AndroidPages.Checkout.CheckoutOrderScreen;
-import Pages.AndroidPages.Checkout.CheckoutPageScreen;
-import Pages.AndroidPages.Checkout.CheckoutPaymentConfirmationScreen;
-import Pages.AndroidPages.Checkout.CheckoutPaymentScreen;
+import Pages.AndroidPages.Checkout.*;
 import Pages.AndroidPages.Filters.FiltersScreen;
 import Pages.AndroidPages.Filters.FiltersSettingsScreen;
 import Pages.AndroidPages.LoginAndRegistration.*;
@@ -80,6 +77,7 @@ public class BaseTestClass extends AppiumBaseClass {
     public ProfilePageInterface profilePageInterface;
     public SettingsInterface settingsInterface;
     public BargainScreenInChatInterface bargainScreenInChatInterface;
+    public CheckoutPostamatListInterface checkoutPostamatListInterface;
 
 
     @Before
@@ -209,6 +207,7 @@ public class BaseTestClass extends AppiumBaseClass {
         checkoutPaymentConfirmationInterface = new CheckoutPaymentConfirmationScreen(driver());
         profilePageInterface = new ProfileScreen(driver());
         bargainScreenInChatInterface = new BargainTabInChat(driver());
+        checkoutPostamatListInterface = new CheckoutPostamatListScreen(driver());
     }
 
     @After

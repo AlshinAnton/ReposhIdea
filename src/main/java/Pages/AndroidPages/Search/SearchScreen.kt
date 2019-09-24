@@ -141,6 +141,12 @@ class SearchScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), SearchPa
         clickAndroidElementByText(txt)
     }
 
+    override fun chooseRussianPost() {
+        val txt = "Товар с доставкой Почта России"
+        waitANDROIDElementByTEXT(txt)
+        clickAndroidElementByText(txt)
+    }
+
     override fun chooseFirstItem() {
         waitAndClickAndroidElementByID("com.reposh.dev:id/ivProductPhoto")
     }

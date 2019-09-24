@@ -181,4 +181,9 @@ public class SearchPageIOS extends IOSBaseClass implements SearchPageInterface {
     public void clickByNeededSearchQuery(@NotNull String searchResult) {
 
     }
+
+    @Override
+    public void chooseRussianPost() {
+
+    }
 }

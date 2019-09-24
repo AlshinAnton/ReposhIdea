@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" tests="3" skipped="0" failures="2" errors="0" timestamp="2019-09-24T11:49:43" hostname="Tonis-iMac.local" time="193.552">
+<testsuite name="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" tests="3" skipped="0" failures="2" errors="0" timestamp="2019-09-24T13:52:38" hostname="Tonis-iMac.local" time="197.36">
   <properties/>
-  <testcase name="clearSearchHistoryInPeople" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="72.128">
-    <failure message="org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:100b:f056:d4b3:f7ba%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_91'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: One+5t, fullReset: true, noReset: false, platformName: android, platformVersion: 9, udid: 95a4dfae}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: 95a4dfae, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: 95a4dfae, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 95a4dfae, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: 17e40cad-5fe7-47bc-be9c-dab0020a7c33&#10;*** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;tester&quot;)}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+  <testcase name="clearSearchHistoryInPeople" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="73.553">
+    <failure message="org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'&#10;System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:100b:f056:d4b3:f7ba%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_91'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: One+5t, fullReset: true, noReset: false, platformName: android, platformVersion: 9, udid: 95a4dfae}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: 95a4dfae, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: 95a4dfae, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 95a4dfae, viewportRect: {height: 2097, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: cfd66139-8ccc-40b4-b11f-bcd4a6438d60&#10;*** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;tester&quot;)}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:100b:f056:d4b3:f7ba%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_91'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: One+5t, fullReset: true, noReset: false, platformName: android, platformVersion: 9, udid: 95a4dfae}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: 95a4dfae, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: 95a4dfae, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 95a4dfae, viewportRect: {height: 1971, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 17e40cad-5fe7-47bc-be9c-dab0020a7c33
+Capabilities {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: One+5t, fullReset: true, noReset: false, platformName: android, platformVersion: 9, udid: 95a4dfae}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: 95a4dfae, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: 95a4dfae, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 95a4dfae, viewportRect: {height: 2097, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: cfd66139-8ccc-40b4-b11f-bcd4a6438d60
 *** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;tester&quot;)}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -30,7 +30,7 @@ Session ID: 17e40cad-5fe7-47bc-be9c-dab0020a7c33
 	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
 	at AndroidAndIOSHelpers.AndroidBaseClass.waitANDROIDElementByTEXT(AndroidBaseClass.java:125)
 	at Pages.AndroidPages.Search.SearchScreen.swipeAndClickByTester(SearchScreen.kt:98)
-	at Test.AndroidTests.SearchTests.ClearSearchHistoryTest.clearSearchHistoryInPeople(ClearSearchHistoryTest.kt:56)
+	at Test.AndroidTests.SearchTests.ClearSearchHistoryTest.clearSearchHistoryInPeople(ClearSearchHistoryTest.kt:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -82,7 +82,7 @@ Session ID: 17e40cad-5fe7-47bc-be9c-dab0020a7c33
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="clearSearchHistoryInCategory" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="77.195">
+  <testcase name="clearSearchHistoryInCategory" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="78.776">
     <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.reposh.dev:id/buttonSearch (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.reposh.dev:id/buttonSearch (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
@@ -153,13 +153,13 @@ Driver info: driver.version: unknown
 	... 52 more
 </failure>
   </testcase>
-  <testcase name="clearSearchHistoryInBrands" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="44.229"/>
+  <testcase name="clearSearchHistoryInBrands" classname="Test.AndroidTests.SearchTests.ClearSearchHistoryTest" time="45.031"/>
   <system-out><![CDATA[R1-255 - AND: Проверять на уникальность/помеченность пользователя при переходя в профиль из поиска]]></system-out>
-  <system-err><![CDATA[сен 24, 2019 2:49:55 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[сен 24, 2019 4:52:50 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-сен 24, 2019 2:51:07 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+сен 24, 2019 4:54:03 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-сен 24, 2019 2:52:24 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+сен 24, 2019 4:55:22 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

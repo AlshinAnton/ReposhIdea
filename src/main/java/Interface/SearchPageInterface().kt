@@ -41,6 +41,7 @@ interface SearchPageInterface : SearchWhenFieldVisible {
     fun chooseFirstItem()
     fun setDeliveryQueryText()
     fun choosePostamatQuery()
+    fun chooseRussianPost()
 }
 
 interface SearchWhenFieldVisible {

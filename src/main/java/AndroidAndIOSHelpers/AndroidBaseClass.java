@@ -1,5 +1,6 @@
 package AndroidAndIOSHelpers;
 
+
 import com.google.common.base.CharMatcher;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
@@ -75,7 +76,8 @@ public abstract class AndroidBaseClass {
     //ID
     protected void waitAndroidViewById(String id) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AndroidUIAutomator(
+                "new UiSelector().resourceId(\"" + id + "\")")));
     }
 
     public void waitAndClickAndroidElementByID(String id) {

@@ -1,3 +1,4 @@
+/*
 package Test;
 
 import Test.AndroidTests.AddDeletePublishProductTests.AddProductTest;
@@ -25,3 +26,4 @@ import org.junit.runners.Suite;
                 AddProductTest.class
         })
 public class TestSuiteAddProduct { }
+*/

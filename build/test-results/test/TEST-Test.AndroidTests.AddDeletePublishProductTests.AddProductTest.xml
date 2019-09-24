@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test.AndroidTests.AddDeletePublishProductTests.AddProductTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-24T11:36:22" hostname="Tonis-iMac.local" time="245.537">
+  <properties/>
+  <testcase name="publishProductWithAllDeliveries" classname="Test.AndroidTests.AddDeletePublishProductTests.AddProductTest" time="120.817"/>
+  <testcase name="publishProductWithRussianPost" classname="Test.AndroidTests.AddDeletePublishProductTests.AddProductTest" time="124.72"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[сен 24, 2019 2:36:34 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+сен 24, 2019 2:38:35 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

@@ -33,6 +33,7 @@ class ClearSearchHistoryTest : BaseTestClass() {
         searchPageInterface.clickBack()
         searchPageInterface.clickBack()
         searchPageInterface.waitAndClickSearchIconTop()
+        searchPageInterface.clickCategory()
         searchPageInterface.clearSearchHistory()
     }
 

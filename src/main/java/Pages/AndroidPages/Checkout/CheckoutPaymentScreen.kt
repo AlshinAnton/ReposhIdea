@@ -11,11 +11,10 @@ class CheckoutPaymentScreen (driver: AppiumDriver<*>) : AndroidBaseClass(driver)
         PageFactory.initElements(AppiumFieldDecorator(driver), this)
     }
 
-    val cardNumberFieldID = "form-card-number-input"
-    val monthFieldID = "form-month-input"
-    val yearFieldID = "form-year-input"
-    val cVcFieldID = "form-cvc-input"
-    val receiveMailCheckBoxID = "form-sendmail-checkbox"
+    val cardNumberFieldID = "pan"
+    val dateFieldID = "expDate"
+    val cVcFieldID = "card_cvc"
+    val receiveMailCheckBoxID = "email"
     val paymentSabmitBtnID = "form-submit"
 
 
@@ -32,18 +31,13 @@ class CheckoutPaymentScreen (driver: AppiumDriver<*>) : AndroidBaseClass(driver)
         sendKeysToAndroidElementWithID(cardNumberFieldID, "4300000000000777")
     }
 
-    override fun enterMonthExpire() {
-        clickAndroidElementByText("Месяц")
-        sendKeysToAndroidElementWithID(monthFieldID, "11")
-    }
-
-    override fun enterYearExpire() {
-        clickAndroidElementByText("Год")
-        sendKeysToAndroidElementWithID(yearFieldID, "22")
+    override fun enterDate() {
+        clickAndroidElementByText("Дата")
+        sendKeysToAndroidElementWithID(dateFieldID, "11/22")
     }
 
     override fun enterCVC() {
-        clickAndroidElementByText("CVV/CVC")
+        clickAndroidElementByText("Код")
         sendKeysToAndroidElementWithID(cVcFieldID, "123")
     }
 
@@ -62,8 +56,7 @@ class CheckoutPaymentScreen (driver: AppiumDriver<*>) : AndroidBaseClass(driver)
 
     override fun setCardData() {
         enterCardNumber()
-        enterMonthExpire()
-        enterYearExpire()
+        enterDate()
         enterCVC()
         hideKeyboard()
     }

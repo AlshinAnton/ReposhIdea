@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test.AndroidTests.ProfileTests.ProfileTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-09-24T11:30:16" hostname="Tonis-iMac.local" time="100.482">
+  <properties/>
+  <testcase name="checkGuide" classname="Test.AndroidTests.ProfileTests.ProfileTests" time="32.525"/>
+  <testcase name="checkMyProducts" classname="Test.AndroidTests.ProfileTests.ProfileTests" time="32.329"/>
+  <testcase name="checkLikedTest" classname="Test.AndroidTests.ProfileTests.ProfileTests" time="35.628"/>
+  <system-out><![CDATA[Переход на вкладку Гид выполнен успешно
+Переход в Мои товары выполнен успешно
+Переход во вкладку Мне понравилось выполнен успешно
+]]></system-out>
+  <system-err><![CDATA[сен 24, 2019 2:30:28 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+сен 24, 2019 2:31:01 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+сен 24, 2019 2:31:33 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

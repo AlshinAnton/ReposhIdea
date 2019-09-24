@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test.AndroidTests.SettingsTests.AddDeleteAddressTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-24T11:48:43" hostname="Tonis-iMac.local" time="60.733">
+  <properties/>
+  <testcase name="AddAddressTestWithAllField" classname="Test.AndroidTests.SettingsTests.AddDeleteAddressTest" time="60.733"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[сен 24, 2019 2:48:54 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

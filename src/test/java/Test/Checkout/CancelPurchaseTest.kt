@@ -12,5 +12,7 @@ class CancelPurchaseTest : BaseTestClass() {
         loginInterface.login(User.User9())
         tapeInterface.closeTooltips()
         bottomToolbarInterface.clickProfile()
+
+        // Доделать надо
     }
 }

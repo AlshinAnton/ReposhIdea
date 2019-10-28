@@ -70,6 +70,6 @@ class PublishFromSold : BaseTestClass() {
         sizeInterface.chooseOneSize()
         Thread.sleep(500)
         sizeInterface.chooseOneSize()
-        sizeInterface.clickConfirmButton()
+        //sizeInterface.clickConfirmButton()
     }
 }

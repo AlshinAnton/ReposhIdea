@@ -1,3 +1,4 @@
+/*
 package Test.Checkout
 
 import AppiumSupport.BaseTestClass
@@ -29,4 +30,4 @@ class BuyProductWithRussianPost : BaseTestClass() {
         checkoutPaymentConfirmationInterface.clickContinueShoppingBtn()
         tapeInterface.clickSearchIcon()
     }
-}
+}*/

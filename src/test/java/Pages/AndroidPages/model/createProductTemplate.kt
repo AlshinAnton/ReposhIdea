@@ -124,8 +124,8 @@ fun BaseTestClass.addProductByTemplate(template: CreateProductTemplate) {
             addProductInterface.clickDpdCourier()
             addProductInterface.swipeToDpdPostamat()
             addProductInterface.clickDpdPostamat()
-            addProductInterface.swipeToRussianPost()
-            addProductInterface.clickRussianPost()
+            /*addProductInterface.swipeToRussianPost()
+            addProductInterface.clickRussianPost()*/
         } else if (template.deliveryTemplate.russianPost) {
 
         }

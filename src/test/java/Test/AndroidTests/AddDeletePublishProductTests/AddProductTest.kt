@@ -8,7 +8,7 @@ import org.junit.Test
 
 class AddProductTest : BaseTestClass() {
 
-/*    @Test
+    @Test
     //@DisplayName("Publish product only with necessary fields = photo, name, description, brand, category, size")
     fun publishProductWithDPDCourier() {
                 val createProductTemplate = CreateProductTemplate(
@@ -72,9 +72,9 @@ class AddProductTest : BaseTestClass() {
         )
         addProductByTemplate(createProductTemplate)
         publish()
-    }*/
+    }
 
-    @Test
+  /*  @Test
     //@DisplayName("Publish product only with necessary fields = photo, name, description, brand, category, size")
     fun publishProductWithRussianPost() {
         val createProductTemplate = CreateProductTemplate(
@@ -94,7 +94,7 @@ class AddProductTest : BaseTestClass() {
         )
         addProductByTemplate(createProductTemplate)
         publish()
-    }
+    }*/
 
     @Test
     //@DisplayName("Publish product only with necessary fields = photo, name, description, brand, category, size")

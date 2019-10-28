@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.Checkout.BuyProductWithDpdCourier" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-24T13:20:00" hostname="Tonis-iMac.local" time="69.228">
+<testsuite name="Test.Checkout.BuyProductWithDpdCourier" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-28T11:07:10" hostname="Tonis-iMac.local" time="70.694">
   <properties/>
-  <testcase name="buyProductWithCourierDelivery" classname="Test.Checkout.BuyProductWithDpdCourier" time="69.228"/>
+  <testcase name="buyProductWithCourierDelivery" classname="Test.Checkout.BuyProductWithDpdCourier" time="70.694"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[сен 24, 2019 4:20:15 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[окт 28, 2019 2:07:24 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

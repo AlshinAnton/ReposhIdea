@@ -9,7 +9,7 @@ class BuyProductWithDpdPostamat : BaseTestClass() {
     @Test
     fun buyProductWithPostamatDelivery() {
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.login(User.User1())
+        loginInterface.login(User.User7())
         tapeInterface.closeTooltips()
         tapeInterface.clickSearchIcon()
         searchPageInterface.waitAndClickSearchField()

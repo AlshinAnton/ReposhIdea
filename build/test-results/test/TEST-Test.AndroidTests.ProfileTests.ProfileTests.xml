@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.AndroidTests.ProfileTests.ProfileTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-28T11:20:07" hostname="Tonis-iMac.local" time="99.824">
+<testsuite name="Test.AndroidTests.ProfileTests.ProfileTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-12-24T09:58:45" hostname="Tonis-iMac.local" time="100.211">
   <properties/>
-  <testcase name="checkGuide" classname="Test.AndroidTests.ProfileTests.ProfileTests" time="32.272"/>
-  <testcase name="checkMyProducts" classname="Test.AndroidTests.ProfileTests.ProfileTests" time="32.797"/>
-  <testcase name="checkLikedTest" classname="Test.AndroidTests.ProfileTests.ProfileTests" time="34.755"/>
+  <testcase name="checkGuide" classname="Test.AndroidTests.ProfileTests.ProfileTests" time="31.837"/>
+  <testcase name="checkMyProducts" classname="Test.AndroidTests.ProfileTests.ProfileTests" time="32.038"/>
+  <testcase name="checkLikedTest" classname="Test.AndroidTests.ProfileTests.ProfileTests" time="36.336"/>
   <system-out><![CDATA[Переход на вкладку Гид выполнен успешно
 Переход в Мои товары выполнен успешно
 Переход во вкладку Мне понравилось выполнен успешно
 ]]></system-out>
-  <system-err><![CDATA[окт 28, 2019 2:20:19 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[дек 24, 2019 12:58:56 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-окт 28, 2019 2:20:51 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+дек 24, 2019 12:59:28 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-окт 28, 2019 2:21:24 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+дек 24, 2019 1:00:01 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

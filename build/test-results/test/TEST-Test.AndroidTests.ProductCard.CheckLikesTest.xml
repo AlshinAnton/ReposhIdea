@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.AndroidTests.ProductCard.CheckLikesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-28T11:19:21" hostname="Tonis-iMac.local" time="46.319">
+<testsuite name="Test.AndroidTests.ProductCard.CheckLikesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-24T09:57:58" hostname="Tonis-iMac.local" time="46.744">
   <properties/>
-  <testcase name="checkLikesTest" classname="Test.AndroidTests.ProductCard.CheckLikesTest" time="46.319"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[окт 28, 2019 2:19:33 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <testcase name="checkLikesTest" classname="Test.AndroidTests.ProductCard.CheckLikesTest" time="46.744"/>
+  <system-out><![CDATA[Счетчик не обновился. Элемент взятый в начале =  7  Элемент после лайка = 7
+]]></system-out>
+  <system-err><![CDATA[дек 24, 2019 12:58:10 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

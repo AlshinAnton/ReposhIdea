@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.AndroidTests.ChatTests.SendMessagesFromListChatTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-28T11:51:50" hostname="Tonis-iMac.local" time="111.421">
+<testsuite name="Test.AndroidTests.ChatTests.SendMessagesFromListChatTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-12-24T10:19:46" hostname="Tonis-iMac.local" time="114.288">
   <properties/>
-  <testcase name="writeLongMessageTest" classname="Test.AndroidTests.ChatTests.SendMessagesFromListChatTests" time="34.359"/>
-  <testcase name="writeMessageWithHieroglyphs" classname="Test.AndroidTests.ChatTests.SendMessagesFromListChatTests" time="33.6"/>
-  <testcase name="send5MessagesTest" classname="Test.AndroidTests.ChatTests.SendMessagesFromListChatTests" time="43.462"/>
+  <testcase name="writeLongMessageTest" classname="Test.AndroidTests.ChatTests.SendMessagesFromListChatTests" time="34.275"/>
+  <testcase name="writeMessageWithHieroglyphs" classname="Test.AndroidTests.ChatTests.SendMessagesFromListChatTests" time="34.4"/>
+  <testcase name="send5MessagesTest" classname="Test.AndroidTests.ChatTests.SendMessagesFromListChatTests" time="45.613"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[окт 28, 2019 2:52:02 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[дек 24, 2019 1:19:58 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-окт 28, 2019 2:52:36 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+дек 24, 2019 1:20:33 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-окт 28, 2019 2:53:11 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+дек 24, 2019 1:21:07 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

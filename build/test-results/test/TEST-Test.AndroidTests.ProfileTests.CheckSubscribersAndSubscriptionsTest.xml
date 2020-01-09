@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.AndroidTests.ProfileTests.CheckSubscribersAndSubscriptionsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-28T11:21:47" hostname="Tonis-iMac.local" time="64.96">
+<testsuite name="Test.AndroidTests.ProfileTests.CheckSubscribersAndSubscriptionsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-12-24T10:00:25" hostname="Tonis-iMac.local" time="66.009">
   <properties/>
-  <testcase name="clickBySubscripersTest" classname="Test.AndroidTests.ProfileTests.CheckSubscribersAndSubscriptionsTest" time="32.445"/>
-  <testcase name="clickBySubscriptions" classname="Test.AndroidTests.ProfileTests.CheckSubscribersAndSubscriptionsTest" time="32.515"/>
+  <testcase name="clickBySubscripersTest" classname="Test.AndroidTests.ProfileTests.CheckSubscribersAndSubscriptionsTest" time="33.128"/>
+  <testcase name="clickBySubscriptions" classname="Test.AndroidTests.ProfileTests.CheckSubscribersAndSubscriptionsTest" time="32.881"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[окт 28, 2019 2:21:59 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[дек 24, 2019 1:00:38 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-окт 28, 2019 2:22:31 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+дек 24, 2019 1:01:10 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

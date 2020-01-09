@@ -6,13 +6,7 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.apache.commons.exec.CommandLine;
-import org.apache.commons.exec.DefaultExecuteResultHandler;
-import org.apache.commons.exec.DefaultExecutor;
-import org.apache.commons.exec.ExecuteException;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -38,7 +32,7 @@ public class AppiumController {
     }
 
     void start() throws MalformedURLException {
-        String pathToAndroidAPK = "/Users/Anton/Desktop/Android/installed/build/outputs/apk/debug/Reposh-debug-1.3.1.apk";
+        String pathToAndroidAPK = "/Users/Anton/Desktop/Android/installed/build/outputs/apk/debug/Reposh-debug-1.4.0.apk";
         //private String pathToIOSApp = "/Users/Anton/Library/Developer/Xcode/DerivedData/reposh-ghztocakrnkemcamrssxndllxytz/Build/Products/Debug-iphoneos/mamsy360.app";
         String pathToIOSIpa = "/Users/Anton/Desktop/ReposhIPA/Reposh.ipa";
         String PACKAGEAPP = "com.reposh.dev";

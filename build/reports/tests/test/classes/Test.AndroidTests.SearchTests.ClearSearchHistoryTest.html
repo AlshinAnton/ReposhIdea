@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">2</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3m14.59s</div>
+<div class="counter">2m44.00s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">33%</div>
+<div class="percent">66%</div>
 <p>successful</p>
 </div>
 </td>
@@ -76,91 +76,16 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="clearSearchHistoryInCategory"></a>
-<h3 class="failures">clearSearchHistoryInCategory</h3>
-<span class="code">
-<pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.reposh.dev:id/buttonSearch (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at AndroidAndIOSHelpers.AndroidBaseClass.waitAndClickAndroidElementByID(AndroidBaseClass.java:85)
-	at Pages.AndroidPages.Search.SearchScreen.waitAndClickSearchIconTop(SearchScreen.kt:46)
-	at Test.AndroidTests.SearchTests.ClearSearchHistoryTest.clearSearchHistoryInCategory(ClearSearchHistoryTest.kt:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: com.reposh.dev:id/buttonSearch
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:451:dbea:94d0:ca6e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15', java.version: '1.8.0_91'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	... 52 more
-</pre>
-</span>
-</div>
-<div class="test">
 <a name="clearSearchHistoryInPeople"></a>
 <h3 class="failures">clearSearchHistoryInPeople</h3>
 <span class="code">
 <pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:451:dbea:94d0:ca6e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15', java.version: '1.8.0_91'
+System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:cd0:f144:39a9:bd15%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_91'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: /Users/Anton/Desktop/Androi..., appActivity: com.reposh.presentation.ui...., appPackage: com.reposh.dev, appWaitActivity: com.reposh.feature.auth.ui...., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: One+5t, fullReset: true, noReset: false, platformName: android, platformVersion: 9, udid: 95a4dfae}, deviceApiLevel: 28, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A5010, deviceName: 95a4dfae, deviceScreenDensity: 420, deviceScreenSize: 1080x2160, deviceUDID: 95a4dfae, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, udid: 95a4dfae, viewportRect: {height: 2097, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 3fb88ca8-7f88-417e-85b9-e07dafa22bb3
+Session ID: b55d5cb8-5446-45f1-b969-408e41eb593f
 *** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;tester&quot;)}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -248,17 +173,17 @@ Session ID: 3fb88ca8-7f88-417e-85b9-e07dafa22bb3
 </thead>
 <tr>
 <td class="success">clearSearchHistoryInBrands</td>
-<td class="success">44.381s</td>
+<td class="success">44.134s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">clearSearchHistoryInCategory</td>
-<td class="failures">1m16.82s</td>
-<td class="failures">failed</td>
+<td class="success">clearSearchHistoryInCategory</td>
+<td class="success">47.948s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">clearSearchHistoryInPeople</td>
-<td class="failures">1m13.39s</td>
+<td class="failures">1m11.92s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -272,11 +197,11 @@ Session ID: 3fb88ca8-7f88-417e-85b9-e07dafa22bb3
 <div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>окт 28, 2019 2:48:47 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+<pre>дек 24, 2019 1:17:14 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-окт 28, 2019 2:50:01 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+дек 24, 2019 1:18:26 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-окт 28, 2019 2:51:18 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+дек 24, 2019 1:19:14 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -289,7 +214,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.8</a> at 28.10.2019 14:55:24</p>
+<a href="http://www.gradle.org">Gradle 4.8</a> at 24.12.2019 13:23:23</p>
 </div>
 </div>
 </body>

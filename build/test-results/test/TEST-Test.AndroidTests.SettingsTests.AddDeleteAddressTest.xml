@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.AndroidTests.SettingsTests.AddDeleteAddressTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-10-28T11:47:09" hostname="Tonis-iMac.local" time="87.022">
+<testsuite name="Test.AndroidTests.SettingsTests.AddDeleteAddressTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-12-24T10:15:35" hostname="Tonis-iMac.local" time="87.172">
   <properties/>
-  <testcase name="AddAddressTestWithAllField" classname="Test.AndroidTests.SettingsTests.AddDeleteAddressTest" time="87.022">
+  <testcase name="AddAddressTestWithAllField" classname="Test.AndroidTests.SettingsTests.AddDeleteAddressTest" time="87.172">
     <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.AndroidUIAutomator: new UiSelector().resourceId(&quot;com.reposh.dev:id/action_create_address&quot;) (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.AndroidUIAutomator: new UiSelector().resourceId(&quot;com.reposh.dev:id/action_create_address&quot;) (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
@@ -60,7 +60,7 @@
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.AndroidUIAutomator: new UiSelector().resourceId(&quot;com.reposh.dev:id/action_create_address&quot;)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:451:dbea:94d0:ca6e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15', java.version: '1.8.0_91'
+System info: host: 'Tonis-iMac.local', ip: 'fe80:0:0:0:cd0:f144:39a9:bd15%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_91'
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
 	at java.util.Optional.orElseThrow(Optional.java:290)
@@ -73,7 +73,7 @@ Driver info: driver.version: unknown
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[окт 28, 2019 2:47:21 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[дек 24, 2019 1:15:47 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

@@ -22,6 +22,11 @@ class CheckoutPaymentScreen (driver: AppiumDriver<*>) : AndroidBaseClass(driver)
     val cVcFieldIText = "Код"
     val confirmPaymentBtnText = "Оплатить"
 
+    val cardNumber = "4300000000000777"
+    val expDate = "11/22"
+    val cvc = "123"
+    val email = "Alshin@reposh.com"
+
 
     override fun assertPrice() {
 
@@ -32,17 +37,17 @@ class CheckoutPaymentScreen (driver: AppiumDriver<*>) : AndroidBaseClass(driver)
     }
 
     override fun enterCardNumber() {
-        sendKeysToAndroidElementWithID(cardNumberFieldID, "4300000000000777")
+        sendKeysToAndroidElementWithID(cardNumberFieldID, cardNumber)
     }
 
     override fun enterDate() {
         clickAndroidElementByText(dateFieldText)
-        sendKeysToAndroidElementWithID(dateFieldID, "11/22")
+        sendKeysToAndroidElementWithID(dateFieldID, expDate)
     }
 
     override fun enterCVC() {
         clickAndroidElementByText(cVcFieldIText)
-        sendKeysToAndroidElementWithID(cVcFieldID, "123")
+        sendKeysToAndroidElementWithID(cVcFieldID, cvc)
     }
 
     override fun clickMailReceiveCheckBox() {

@@ -8,6 +8,10 @@ import io.appium.java_client.AppiumDriver
 import io.appium.java_client.pagefactory.AppiumFieldDecorator
 
 class ProductCardPageIOS(driver: AppiumDriver<*>) : IOSBaseClass(driver), ProductCardInterface {
+    override fun swipeToAnotherProducts() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
     override val productID: Int
         get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
     override val productName: String

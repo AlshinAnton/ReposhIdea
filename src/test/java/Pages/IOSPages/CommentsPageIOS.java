@@ -14,7 +14,7 @@ public class CommentsPageIOS extends IOSBaseClass implements CommentsInterface {
     }
 
     @Override
-    public void waitinputField() {
+    public void waitInputField() {
 
     }
 

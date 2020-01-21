@@ -47,6 +47,7 @@ interface ProductCardInterface {
     fun clickByCondition()
     fun assertFilter(filter : String)
     fun swipeToConnectWithSeller()
+    fun swipeToAnotherProducts()
     fun clickConnectWithSeller()
     fun waitId()
 
@@ -62,7 +63,7 @@ interface ProductCardInterface {
 }
 
 interface CommentsInterface {
-    fun waitinputField()
+    fun waitInputField()
     fun clickByInputField()
     fun sendKeysToInputField()
     fun sendComment()

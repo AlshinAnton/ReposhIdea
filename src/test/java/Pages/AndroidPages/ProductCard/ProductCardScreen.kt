@@ -210,6 +210,10 @@ class ProductCardScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), Pro
         clickAndroidElementByText("Написать продавцу")
     }
 
+    override fun swipeToAnotherProducts() {
+        swipeVerticalToElementWithText("Другие товары продавца")
+    }
+
     override fun waitId() {
         waitAndroidViewById("com.reposh.dev:id/tv_id")
     }

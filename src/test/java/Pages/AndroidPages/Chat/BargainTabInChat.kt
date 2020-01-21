@@ -27,7 +27,7 @@ class BargainTabInChat(driver: AppiumDriver<*>) : AndroidBaseClass(driver), Barg
 
 
     override fun waitBargainScreen() {
-        waitAndroidViewById(currentSwitchId)
+        isVisibleID(currentSwitchId)
     }
 
     override fun clickByAcceptedBargain() {

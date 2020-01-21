@@ -3,14 +3,11 @@ package Pages.AndroidPages;
 import AndroidAndIOSHelpers.AndroidBaseClass;
 import AppiumSupport.AppiumController;
 import Interface.AddPhotoFromGalleryInterface;
-import io.appium.java_client.android.nativekey.AndroidKey;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-
-import java.applet.AppletStub;
 
 public class AddPhotoFromGalleryOrCameraAndroid extends AndroidBaseClass implements AddPhotoFromGalleryInterface {
 
@@ -41,7 +38,7 @@ public class AddPhotoFromGalleryOrCameraAndroid extends AndroidBaseClass impleme
 
     @Override
     public void waitAddPhotoFragment() {
-        waitAndroidViewById(firstFragmentGalleryID);
+        isVisibleID(firstFragmentGalleryID);
     }
 
     @Override
@@ -80,7 +77,7 @@ public class AddPhotoFromGalleryOrCameraAndroid extends AndroidBaseClass impleme
         } else if (AppiumController.executionOS.equals(AppiumController.OS.ANDROID_1_PLUS_6)) {
             waitAndClickAndroidElementByID(confirm1PLUSCameraPhotoID);
         } else if (AppiumController.executionOS.equals(AppiumController.OS.ANDROID_NEXUS)) {
-            waitAndroidViewById(waitConfirmPhotoScreenNexusID);
+            isVisibleID(waitConfirmPhotoScreenNexusID);
             waitAndClickAndroidElementByID(confirmNEXUSCameraPhotoID);
         }
     }
@@ -92,7 +89,7 @@ public class AddPhotoFromGalleryOrCameraAndroid extends AndroidBaseClass impleme
 
     @Override
     public void waitChooseGalleryFragment() {
-        waitAndroidViewById(secondFragmentGalleryID);
+        isVisibleID(secondFragmentGalleryID);
     }
 
     @Override
@@ -112,7 +109,7 @@ public class AddPhotoFromGalleryOrCameraAndroid extends AndroidBaseClass impleme
 
     @Override
     public void waitGallery() {
-        waitAndroidViewById(choosePhotoID);
+        isVisibleID(choosePhotoID);
     }
 
     @Override

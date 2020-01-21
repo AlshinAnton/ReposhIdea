@@ -32,20 +32,20 @@ public class LoginScreen extends AndroidBaseClass implements LoginInterface {
 
     @Override
     public void enterPhoneNumber(String phoneNum) {
-        waitAndroidViewById(phoneFieldID);
+        isVisibleID(phoneFieldID);
         sendKeysToAndroidElementWithID(phoneFieldID, phoneNum);
     }
 
     @Override
     public void enterIncorrectPhoneNumber() {
-        waitAndroidViewById(phoneFieldID);
+        isVisibleID(phoneFieldID);
         sendKeysToAndroidElementWithID(phoneFieldID, incorrectPhone);
     }
 
     @Override
     public void waitErrorPhoneFormat() {
         assertWaitElementWithIDTemplate(errorPhoneID, "неверный формат номера телефона");
-        waitAndroidViewById(errorPhoneID);
+        isVisibleID(errorPhoneID);
     }
 
     @Override
@@ -60,7 +60,7 @@ public class LoginScreen extends AndroidBaseClass implements LoginInterface {
 
     @Override
     public void waitCodeScreen() {
-        waitAndroidViewById(codeFieldID);
+        isVisibleID(codeFieldID);
     }
 
     @Override

@@ -60,7 +60,7 @@ class SearchScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), SearchPa
     }
 
     override fun waitAndClickSearchField() {
-        waitAndroidViewById(searchFieldID)
+        isVisibleID(searchFieldID)
         clickAndroidElementByIDAndInstance(searchFieldID, 0)
     }
 

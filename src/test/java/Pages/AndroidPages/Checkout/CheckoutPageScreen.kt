@@ -39,7 +39,7 @@ class CheckoutPageScreen (driver: AppiumDriver<*>) : AndroidBaseClass(driver), C
     }
 
     override fun waitaddressField() {
-        waitAndroidViewById("com.reposh.dev:id/addressTV")
+        isVisibleID("com.reposh.dev:id/addressTV")
     }
 
     override fun chooseAnotherAddress() {

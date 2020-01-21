@@ -22,7 +22,7 @@ class BargainScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Bargai
 
 
     override fun waitBargainScreen() {
-        waitAndroidViewById(sendOfferBtnId)
+        isVisibleID(sendOfferBtnId)
     }
 
     override fun assertProductPriceInBargainScreen() {
@@ -38,7 +38,7 @@ class BargainScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Bargai
     }
 
     override fun waitCancelOrderBtn() {
-        waitAndroidViewById(cancelOfferBtnId)
+        isVisibleID(cancelOfferBtnId)
     }
 
     override fun clickCancelOrderBtn() {
@@ -85,7 +85,7 @@ class BargainScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Bargai
     }
 
     override fun waitErrorMessage() {
-        waitAndroidViewById(errorMesssageId)
+        isVisibleID(errorMesssageId)
     }
 
     override fun assertLowPriceErrorMessage() {

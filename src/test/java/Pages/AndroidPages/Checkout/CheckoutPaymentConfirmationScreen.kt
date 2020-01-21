@@ -20,7 +20,7 @@ class CheckoutPaymentConfirmationScreen(driver: AppiumDriver<*>) : AndroidBaseCl
     }
 
     override fun waitContinueShoppingBtn() {
-        waitAndroidViewById(continueShoppingBtnID)
+        isVisibleID(continueShoppingBtnID)
     }
 
     override fun clickContinueShoppingBtn() {
@@ -28,7 +28,7 @@ class CheckoutPaymentConfirmationScreen(driver: AppiumDriver<*>) : AndroidBaseCl
     }
 
     override fun waitCheckOrderBtn() {
-        waitAndroidViewById(checkOrderBtnID)
+        isVisibleID(checkOrderBtnID)
     }
 
     override fun clickCheckOrderBtn() {

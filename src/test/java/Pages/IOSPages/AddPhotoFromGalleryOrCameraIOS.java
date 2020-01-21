@@ -60,7 +60,7 @@ public class AddPhotoFromGalleryOrCameraIOS extends IOSBaseClass implements AddP
 
     @Override
     public void waitChooseGalleryFragment() {
-        //waitAndroidViewById(secondFragmentGalleryID);
+        //isVisibleID(secondFragmentGalleryID);
     }
 
     @Override

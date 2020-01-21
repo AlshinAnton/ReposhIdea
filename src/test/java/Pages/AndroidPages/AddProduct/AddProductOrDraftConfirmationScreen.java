@@ -19,7 +19,7 @@ public class AddProductOrDraftConfirmationScreen extends AndroidBaseClass implem
 
     @Override
     public void waitAddProductOrDraftConfirmationPage() {
-        waitAndroidViewById(checkProductBtnID);
+        isVisibleID(checkProductBtnID);
     }
 
     @Override

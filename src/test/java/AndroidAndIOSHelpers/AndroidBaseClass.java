@@ -74,15 +74,21 @@ public abstract class AndroidBaseClass {
     }
 
     //ID
-    protected void waitAndroidViewById(String id) {
+    protected void isVisibleID(String id) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AndroidUIAutomator(
                 "new UiSelector().resourceId(\"" + id + "\")")));
     }
 
+    protected void isClickableID(String id) {
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.elementToBeClickable(MobileBy.AndroidUIAutomator(
+                "new UiSelector().resourceId(\"" + id + "\")")));
+    }
+
     public void waitAndClickAndroidElementByID(String id) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.id(id))).click();
     }
 
     protected void sendKeysToAndroidElementWithID(String id, String text) {
@@ -246,7 +252,7 @@ public abstract class AndroidBaseClass {
 
     protected void assertWaitElementWithIDTemplate(String id, String errorMessage) {
         try {
-            waitAndroidViewById(id);
+            isVisibleID(id);
         } catch (NoSuchElementException noSuchElement) {
             System.out.println("Сообщение: " + errorMessage + " отсутствует на экране");
         }
@@ -254,7 +260,7 @@ public abstract class AndroidBaseClass {
 
     protected void assertWaitChildElementWithIDTemplate(String id, String errorMessage) {
         try {
-            waitAndroidViewById(id);
+            isVisibleID(id);
         } catch (NoSuchElementException noSuchElement) {
             System.out.println("Сообщение: " + errorMessage + " отсутствует на экране");
         }

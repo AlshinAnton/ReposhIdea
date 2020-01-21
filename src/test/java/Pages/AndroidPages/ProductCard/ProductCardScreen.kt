@@ -54,7 +54,7 @@ class ProductCardScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), Pro
 
 
     override fun waitMenu() {
-        waitAndroidViewById(menuActionBtnID)
+        isVisibleID(menuActionBtnID)
     }
 
     override fun clickEdit() {
@@ -71,7 +71,7 @@ class ProductCardScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), Pro
     }
 
     override fun getInitialProductID(): Int {
-        waitAndroidViewById("com.reposh.dev:id/tv_id")
+        isVisibleID("com.reposh.dev:id/tv_id")
         val moderationID = getTextFromElementWithId("com.reposh.dev:id/tv_id")
         return Integer.parseInt(moderationID.substring(4))
     }
@@ -83,7 +83,7 @@ class ProductCardScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), Pro
     }
 
     override fun waitLikeIcon() {
-        waitAndroidViewById(likeIconID)
+        isVisibleID(likeIconID)
     }
 
     override fun clickByLikeIcon() {
@@ -91,15 +91,16 @@ class ProductCardScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), Pro
     }
 
     override fun waitCommentsIcon() {
-        waitAndroidViewById(commentsIconID)
+        isClickableID(commentsIconID)
     }
 
     override fun clickByCommentsIcon() {
+
         waitAndClickAndroidElementByID(commentsIconID)
     }
 
     override fun waitShareIcon() {
-        waitAndroidViewById(shareIconID)
+        isVisibleID(shareIconID)
     }
 
     override fun clickByShareIcon() {
@@ -215,11 +216,11 @@ class ProductCardScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), Pro
     }
 
     override fun waitId() {
-        waitAndroidViewById("com.reposh.dev:id/tv_id")
+        isVisibleID("com.reposh.dev:id/tv_id")
     }
 
     override fun waitSendToSoldBtn() {
-        waitAndroidViewById(sendToSoldBtnID)
+        isVisibleID(sendToSoldBtnID)
     }
 
     override fun clickSendToSold() {
@@ -238,7 +239,7 @@ class ProductCardScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), Pro
     }
 
     override fun waitProductName() {
-        waitAndroidViewById(productNameID)
+        isVisibleID(productNameID)
     }
 
     override fun getProductName() {

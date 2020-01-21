@@ -7,23 +7,23 @@ import io.appium.java_client.AppiumDriver
 
 class AddingCreditCardScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), AddingCardInterface {
     override fun waitAddingBankCardScreen() {
-        waitAndroidViewById("com.reposh.dev:id/tv_card_number_empty")
+        isVisibleID("com.reposh.dev:id/tv_card_number_empty")
     }
 
     override fun waitFieldCardNumber() {
-        waitAndroidViewById("com.reposh.dev:id/et_card_number")
+        isVisibleID("com.reposh.dev:id/et_card_number")
     }
 
     override fun waitFieldValidityCard() {
-        waitAndroidViewById("com.reposh.dev:id/et_valid_through")
+        isVisibleID("com.reposh.dev:id/et_valid_through")
     }
 
     override fun waitFieldCardOwner() {
-        waitAndroidViewById("com.reposh.dev:id/et_cardholder")
+        isVisibleID("com.reposh.dev:id/et_cardholder")
     }
 
     override fun waitFieldCVC() {
-        waitAndroidViewById("com.reposh.dev:id/et_cvv")
+        isVisibleID("com.reposh.dev:id/et_cvv")
     }
 
     override fun sendKeysToCardNumberField() {

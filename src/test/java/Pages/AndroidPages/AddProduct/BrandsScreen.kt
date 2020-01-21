@@ -31,7 +31,7 @@ class BrandsScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), BrandsIn
 
 
     override fun waitBrandsPage() {
-        waitAndroidViewById(searchFieldID)
+        isVisibleID(searchFieldID)
     }
 
     override fun clickByAdamexBrand() {

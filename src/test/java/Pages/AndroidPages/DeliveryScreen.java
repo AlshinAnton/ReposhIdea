@@ -19,7 +19,7 @@ public class DeliveryScreen extends AndroidBaseClass implements DeliveryInterfac
 
     @Override
     public void waitDeliveryScreen() {
-        waitAndroidViewById(confirmBtnID);
+        isVisibleID(confirmBtnID);
     }
 
     @Override
@@ -39,7 +39,7 @@ public class DeliveryScreen extends AndroidBaseClass implements DeliveryInterfac
 
     @Override
     public void waitChooseRateScreen() {
-        waitAndroidViewById("com.reposh.dev:id/priceTv");
+        isVisibleID("com.reposh.dev:id/priceTv");
     }
 
     @Override

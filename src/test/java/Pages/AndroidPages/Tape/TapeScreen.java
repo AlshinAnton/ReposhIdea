@@ -54,7 +54,7 @@ public class TapeScreen extends AndroidBaseClass implements TapeInterface {
 
     @Override
     public boolean waitSortIcon() {
-        waitAndroidViewById("com.reposh.dev:id/bt_sort");
+        isVisibleID("com.reposh.dev:id/bt_sort");
         return false;
     }
 

@@ -11,7 +11,7 @@ class EditProfileScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Ed
 
 
     override fun waitEditProfilePage() {
-        waitAndroidViewById(avatarID)
+        isVisibleID(avatarID)
     }
 
     override fun clickByAvatar() {
@@ -31,7 +31,7 @@ class EditProfileScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Ed
     }
 
     override fun waitCloseImageIcon() {
-        waitAndroidViewById("com.reposh.dev:id/btnClose")
+        isVisibleID("com.reposh.dev:id/btnClose")
     }
 
     override fun clickCloseImageIcon() {

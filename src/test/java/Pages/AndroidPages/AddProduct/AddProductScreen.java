@@ -74,7 +74,7 @@ public class AddProductScreen extends AndroidBaseClass implements AddProductInte
 
     @Override
     public void waitAddProductPage() {
-        waitAndroidViewById(addPhotoID);
+        isVisibleID(addPhotoID);
     }
 
     @Override

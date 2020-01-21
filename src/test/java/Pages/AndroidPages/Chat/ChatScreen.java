@@ -27,12 +27,12 @@ public class ChatScreen extends AndroidBaseClass implements ChatInterface {
 
     @Override
     public void waitSendMessageBtn() {
-        waitAndroidViewById(sendMessageBtnID);
+        isVisibleID(sendMessageBtnID);
     }
 
     @Override
     public void waitMessageField() {
-        waitAndroidViewById(entryFieldMessageID);
+        isVisibleID(entryFieldMessageID);
     }
 
     @Override

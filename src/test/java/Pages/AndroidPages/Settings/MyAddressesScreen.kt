@@ -36,7 +36,7 @@ class MyAddressesScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), My
     }
 
     override fun waitMyAddressesPage() {
-        waitAndroidViewById(addAddressBtnID)
+        isVisibleID(addAddressBtnID)
     }
 
     override fun waitAndClickRegionField() {

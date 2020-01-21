@@ -13,7 +13,7 @@ class CommentsScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Comme
     val sendComment = "com.reposh.dev:id/button_send_comment"
 
     override fun waitInputField() {
-        waitAndroidViewById(inputFieldID)
+        isVisibleID(inputFieldID)
     }
 
     override fun clickByInputField() {

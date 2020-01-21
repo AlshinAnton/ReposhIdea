@@ -60,7 +60,7 @@ class CheckoutOrderScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), C
     }
 
     override fun waitStatus() {
-        waitAndroidViewById(statusID)
+        isVisibleID(statusID)
     }
 
     override fun assertStatus() {

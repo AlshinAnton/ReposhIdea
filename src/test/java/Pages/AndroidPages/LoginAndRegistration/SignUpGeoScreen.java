@@ -23,7 +23,7 @@ public class SignUpGeoScreen extends AndroidBaseClass implements SignUpGeoInterf
 
     @Override
     public void waitSearchField() {
-        waitAndroidViewById(searchFieldID);
+        isVisibleID(searchFieldID);
     }
 
     @Override

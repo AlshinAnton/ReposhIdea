@@ -19,7 +19,7 @@ public class ColorScreen extends AndroidBaseClass implements ColorInterface {
 
     @Override
     public void waitColorPage() {
-        waitAndroidViewById(colorFieldID);
+        isVisibleID(colorFieldID);
     }
 
     @Override

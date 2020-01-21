@@ -52,6 +52,6 @@ public class LocationScreen extends AndroidBaseClass implements LocationInterfac
 
     @Override
     public void waitSearchField() {
-        waitAndroidViewById(searchFieldID);
+        isVisibleID(searchFieldID);
     }
 }

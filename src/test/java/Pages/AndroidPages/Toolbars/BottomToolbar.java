@@ -32,6 +32,6 @@ public class BottomToolbar extends AndroidBaseClass implements BottomToolbarInte
 
     @Override
     public void waitTape() {
-        waitAndroidViewById(tapeTABID);
+        isVisibleID(tapeTABID);
     }
 }

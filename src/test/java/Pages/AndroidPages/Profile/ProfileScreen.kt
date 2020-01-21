@@ -50,7 +50,7 @@ class ProfileScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Profil
     }
 
     override fun waitTooltip() {
-        waitAndroidViewById(tooltipID)
+        isVisibleID(tooltipID)
     }
 
     override fun closeTooltip() {
@@ -87,7 +87,7 @@ class ProfileScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Profil
     }
 
     override fun waitSettings() {
-        waitAndroidViewById(settingsBtnId)
+        isVisibleID(settingsBtnId)
     }
 
     override fun clickSettings() {
@@ -95,7 +95,7 @@ class ProfileScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Profil
     }
 
     override fun waitSubscriptionsField() {
-        waitAndroidViewById(subscriptionsID)
+        isVisibleID(subscriptionsID)
     }
 
     override fun clickSubscriptionsField() {
@@ -103,7 +103,7 @@ class ProfileScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Profil
     }
 
     override fun waitSubscribersField() {
-        waitAndroidViewById(subscribersID)
+        isVisibleID(subscribersID)
     }
 
     override fun clickSubscribersField() {
@@ -111,7 +111,7 @@ class ProfileScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Profil
     }
 
     override fun waitSearchBtn() {
-        waitAndroidViewById(searchBtnId)
+        isVisibleID(searchBtnId)
     }
 
     override fun clickSearchBtn() {
@@ -119,7 +119,7 @@ class ProfileScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Profil
     }
 
     override fun waitSortBtn() {
-        waitAndroidViewById(sortBtnId)
+        isVisibleID(sortBtnId)
     }
 
     override fun clickSortBtb() {
@@ -127,7 +127,7 @@ class ProfileScreen(driver: AppiumDriver<*>?) : AndroidBaseClass(driver), Profil
     }
 
     override fun waitFiltersBtn() {
-        waitAndroidViewById(filtersBtnId)
+        isVisibleID(filtersBtnId)
     }
 
     override fun clickFiltersBtn() {

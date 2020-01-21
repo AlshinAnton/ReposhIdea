@@ -20,11 +20,11 @@ public class SignUpAvatarScreen extends AndroidBaseClass implements SignUpAvatar
 
 
     public void waitAddPhotoPage() {
-        waitAndroidViewById(addPhotoID);
+        isVisibleID(addPhotoID);
     }
 
     public void waitMakePhotoFragment() {
-        waitAndroidViewById(chooseGaleryID);
+        isVisibleID(chooseGaleryID);
     }
 
     public void clickAddPhoto() {

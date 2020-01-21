@@ -2,8 +2,8 @@ package Test.AndroidTests.SearchTests
 
 import AppiumSupport.BaseTestClass
 import Pages.AndroidPages.LoginAndRegistration.User
+import org.junit.jupiter.api.Test
 
-import org.junit.Test
 
 import java.lang.Thread.sleep
 

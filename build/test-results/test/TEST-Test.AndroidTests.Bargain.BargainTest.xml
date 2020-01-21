@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.AndroidTests.Bargain.BargainTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-12-24T09:54:16" hostname="Tonis-iMac.local" time="174.422">
+<testsuite name="Test.AndroidTests.Bargain.BargainTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-21T07:47:36" hostname="Tonis-iMac.local" time="174.771">
   <properties/>
-  <testcase name="BargainCloseAndOpenTest" classname="Test.AndroidTests.Bargain.BargainTest" time="52.498"/>
-  <testcase name="LowOfferInBargain" classname="Test.AndroidTests.Bargain.BargainTest" time="45.073"/>
-  <testcase name="FullAcceptBargain" classname="Test.AndroidTests.Bargain.BargainTest" time="32.531"/>
-  <testcase name="HighOfferInBargain" classname="Test.AndroidTests.Bargain.BargainTest" time="44.32"/>
+  <testcase name="BargainCloseAndOpenTest()" classname="Test.AndroidTests.Bargain.BargainTest" time="51.814"/>
+  <testcase name="LowOfferInBargain()" classname="Test.AndroidTests.Bargain.BargainTest" time="44.099"/>
+  <testcase name="FullAcceptBargain()" classname="Test.AndroidTests.Bargain.BargainTest" time="34.822"/>
+  <testcase name="HighOfferInBargain()" classname="Test.AndroidTests.Bargain.BargainTest" time="44.036"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[дек 24, 2019 12:54:28 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <system-err><![CDATA[янв 21, 2020 10:47:47 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-дек 24, 2019 12:55:21 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+янв 21, 2020 10:48:39 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-дек 24, 2019 12:56:06 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+янв 21, 2020 10:49:24 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
-дек 24, 2019 12:56:38 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+янв 21, 2020 10:49:58 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

@@ -1,7 +1,6 @@
 package Test.AndroidTests.ProfileTests
 
 import AppiumSupport.BaseTestClass
-import org.junit.Test
 
 class PublishFromSoldInProfile : BaseTestClass() {
 

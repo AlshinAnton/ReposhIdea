@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test.AndroidTests.ProductCard.CheckCommentsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-24T09:57:11" hostname="Tonis-iMac.local" time="47.21">
+<testsuite name="Test.AndroidTests.ProductCard.CheckCommentsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-21T07:50:30" hostname="Tonis-iMac.local" time="46.887">
   <properties/>
-  <testcase name="checkCommentsInMyGoodsForSaleTest" classname="Test.AndroidTests.ProductCard.CheckCommentsTest" time="47.21"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[дек 24, 2019 12:57:22 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+  <testcase name="checkCommentsInMyGoodsForSaleTest()" classname="Test.AndroidTests.ProductCard.CheckCommentsTest" time="46.887"/>
+  <system-out><![CDATA[Счетчик не обновился. Элемент взятый в начале + 1 =  2  Элемент после комментрия = 12
+]]></system-out>
+  <system-err><![CDATA[янв 21, 2020 10:50:42 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

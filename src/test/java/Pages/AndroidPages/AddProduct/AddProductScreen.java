@@ -85,8 +85,12 @@ public class AddProductScreen extends AndroidBaseClass implements AddProductInte
 
     @Override
     public void clickProductName() {
-        waitAndClickAndroidElementByID(deleteIconFromField);
-        clickAndroidElementByIDAndInstance(productNameAndDescriptionFieldsID, 4);
+        if (productNameAndDescriptionFieldsID.equals("")) {
+            clickAndroidElementByIDAndInstance(productNameAndDescriptionFieldsID, 4);
+        } else {
+            waitAndClickAndroidElementByID(deleteIconFromField);
+            clickAndroidElementByIDAndInstance(productNameAndDescriptionFieldsID, 4);
+        }
     }
 
     @Override

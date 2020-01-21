@@ -1,7 +1,6 @@
 package Test.AndroidTests
 
 import AppiumSupport.BaseTestClass
-import org.junit.Test
 
 
 class MoveToSold : BaseTestClass() {

@@ -3,7 +3,7 @@ package Test.AndroidTests.AddDeletePublishProductTests
 import AppiumSupport.BaseTestClass
 import Pages.AndroidPages.LoginAndRegistration.User
 import Pages.AndroidPages.model.*
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 
 class AddProductTest : BaseTestClass() {

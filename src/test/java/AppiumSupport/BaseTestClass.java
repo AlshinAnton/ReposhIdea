@@ -24,8 +24,8 @@ import Pages.IOSPages.ChatIOS.ChatPageIOS;
 import Pages.IOSPages.LoginAndRegistration.*;
 import Pages.IOSPages.Toolbars.BottomToolbarIOS;
 import Pages.Notifications.NotificationsPageAndroid;
-import org.junit.After;
-import org.junit.Before;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 
 public class BaseTestClass extends AppiumBaseClass {
 
@@ -80,7 +80,7 @@ public class BaseTestClass extends AppiumBaseClass {
     public CheckoutPostamatListInterface checkoutPostamatListInterface;
 
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         AppiumController.instance.start();
         switch (AppiumController.executionOS) {
@@ -210,7 +210,7 @@ public class BaseTestClass extends AppiumBaseClass {
         checkoutPostamatListInterface = new CheckoutPostamatListScreen(driver());
     }
 
-    @After
+    @AfterEach
     public void tearDown() {
         AppiumController.instance.stop();
     }

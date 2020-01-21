@@ -1,0 +1,1 @@
+{"uuid":"1934884b-329f-4df2-8051-0b6fe1af5ea4","historyId":"fed2bccbe5e6580bb40a6de44d938586","labels":[{"name":"suite","value":"Test.AndroidTests.LoginAndRegTests.Login_test"},{"name":"package","value":"Test.AndroidTests.LoginAndRegTests.Login_test"}],"name":"correctLoginTest()","status":"passed","stage":"finished","start":1579594696503,"stop":1579594723139}

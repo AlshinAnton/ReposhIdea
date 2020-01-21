@@ -2,7 +2,7 @@ package Test.AndroidTests
 
 import AppiumSupport.BaseTestClass
 import Pages.AndroidPages.LoginAndRegistration.User
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 class PublishFromSold : BaseTestClass() {
 

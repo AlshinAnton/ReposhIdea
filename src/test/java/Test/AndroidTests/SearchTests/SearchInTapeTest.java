@@ -3,7 +3,6 @@ package Test.AndroidTests.SearchTests;
 
 import AppiumSupport.BaseTestClass;
 
-import org.junit.Test;
 
 public class SearchInTapeTest extends BaseTestClass {
 

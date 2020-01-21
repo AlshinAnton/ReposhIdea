@@ -3,7 +3,6 @@ package Test.IOSTests.LoginAndRegIOSTests
 import AppiumSupport.BaseTestClass
 
 import Pages.AndroidPages.LoginAndRegistration.User
-import org.junit.Test
 
 class Login_testIOS : BaseTestClass() {
 

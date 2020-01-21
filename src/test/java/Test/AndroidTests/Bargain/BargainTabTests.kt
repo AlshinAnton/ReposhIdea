@@ -2,7 +2,7 @@ package Test.AndroidTests.Bargain
 
 import AppiumSupport.BaseTestClass
 import Pages.AndroidPages.LoginAndRegistration.User
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 class BargainTabTests : BaseTestClass() {
 
@@ -34,27 +34,27 @@ class BargainTabTests : BaseTestClass() {
         bargainInterface.waitFrozenBragainText()
     }
 
-    @Test
+
+    //Тесты ниже не предсказуемы , данные заказы могут быть а могут и не быть , скрыл
+    /*@Test
     fun checkWaitSellerAnswerText() {
         moveToBargainTab()
         bargainScreenInChatInterface.clickByWaitSellerConfirmationBargain()
         bargainInterface.waitOfferCancelBtn()
     }
-
     @Test
     fun checkWaitBuyerAnswerText() {
         moveToBargainTab()
         bargainScreenInChatInterface.clickByWaitBuyerConfirmationBargain()
         bargainInterface.waitOfferCancelBtn()
-    }
-
-    @Test
+    }*/
+    /*@Test
     fun checkCancelBargainText() {
         moveToBargainTab()
         bargainScreenInChatInterface.clickByCurrentSwitch()
         bargainScreenInChatInterface.clickByClosedBargain()
         bargainInterface.waitCloseBargainText()
-    }
+    }*/
 
 
     private fun moveToBargainTab() {

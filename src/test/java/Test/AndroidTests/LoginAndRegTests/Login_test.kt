@@ -4,9 +4,8 @@ import AppiumSupport.BaseTestClass
 import Pages.AndroidPages.LoginAndRegistration.User
 import io.appium.java_client.pagefactory.AndroidBy
 
-import org.junit.Before
 
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 class Login_test : BaseTestClass() {
 

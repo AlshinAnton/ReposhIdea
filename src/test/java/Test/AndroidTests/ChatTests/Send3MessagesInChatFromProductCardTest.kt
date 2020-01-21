@@ -1,7 +1,6 @@
 package Test.AndroidTests.ChatTests
 
 import AppiumSupport.BaseTestClass
-import org.junit.Test
 
 class Send3MessagesInChatFromProductCardTest : BaseTestClass() {
 

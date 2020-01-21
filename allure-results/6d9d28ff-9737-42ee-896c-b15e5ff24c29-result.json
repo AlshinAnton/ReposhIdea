@@ -1,0 +1,1 @@
+{"uuid":"6d9d28ff-9737-42ee-896c-b15e5ff24c29","historyId":"dbd8a1e70a064fb4778a0ae4ef87e6e3","labels":[{"name":"suite","value":"Test.AndroidTests.LoginAndRegTests.Login_test"},{"name":"package","value":"Test.AndroidTests.LoginAndRegTests.Login_test"}],"name":"incorrectPhoneNumber()","status":"passed","stage":"finished","start":1579594678049,"stop":1579594696502}

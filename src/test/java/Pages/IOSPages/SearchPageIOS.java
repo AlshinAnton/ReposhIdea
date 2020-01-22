@@ -33,7 +33,7 @@ public class SearchPageIOS extends IOSBaseClass implements SearchPageInterface {
     }
 
     @Override
-    public void clickBrends() {
+    public void clickBrands() {
 
     }
 

@@ -1,6 +1,7 @@
 package Test.AndroidTests.ProfileTests
 
 import AppiumSupport.BaseTestClass
+import Pages.AndroidPages.LoginAndRegistration.User
 
 class PublishFromSoldInProfile : BaseTestClass() {
 
@@ -45,14 +46,14 @@ class PublishFromSoldInProfile : BaseTestClass() {
 
     private fun moveToProfile() {
         onboardingInterface.waitThenCloseOnBoardingPage()
-        loginInterface.loginAsTester9()
+        loginInterface.login(User.User9())
         tapeInterface.closeTooltips()
         bottomToolbarInterface.clickProfile()
-        profileMainPageInterface.waitSettings()
+        profilePageInterface.waitSettings()
     }
 
     private fun moveToEditProduct() {
-        profileMainPageInterface.clickSoldTab()
+        profilePageInterface.clic()
         myProductsInterface.clickByFirstProduct()
         productCardInterface.waitProductName()
         productCardInterface.getProductName()

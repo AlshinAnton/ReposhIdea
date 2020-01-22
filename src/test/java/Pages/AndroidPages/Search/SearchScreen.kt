@@ -33,7 +33,7 @@ class SearchScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), SearchPa
         waitAndClickAndroidElementByText("Категории")
     }
 
-    override fun clickBrends() {
+    override fun clickBrands() {
         waitAndClickAndroidElementByText("Бренды")
     }
 
@@ -95,7 +95,7 @@ class SearchScreen(driver: AppiumDriver<*>) : AndroidBaseClass(driver), SearchPa
 
     override fun swipeAndClickByTester() {
         val searchedMan = "tester"
-        waitANDROIDElementByTEXT(searchedMan)
+        swipeVerticalToElementWithText(searchedMan)
         clickAndroidElementByText(searchedMan)
     }
 

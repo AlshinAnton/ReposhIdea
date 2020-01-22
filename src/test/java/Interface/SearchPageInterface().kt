@@ -3,7 +3,7 @@ package Interface
 interface SearchPageInterface : SearchWhenFieldVisible {
     fun clickTop()
     fun clickCategory()
-    fun clickBrends()
+    fun clickBrands()
     fun clickPeople()
 
     fun waitAndClickSearchIconTop()

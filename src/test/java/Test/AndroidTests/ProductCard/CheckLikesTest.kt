@@ -12,7 +12,6 @@ class CheckLikesTest : BaseTestClass() {
         loginInterface.login(User.User1())
         tapeInterface.closeTooltips()
         bottomToolbarInterface.clickSearch()
-        Thread.sleep(1000)
         searchPageInterface.waitAndClickSearchIconTop()
         searchPageInterface.waitAndClickSearchField()
         searchPageInterface.setTextForSearchHeadPhones()
@@ -21,9 +20,7 @@ class CheckLikesTest : BaseTestClass() {
         productCardInterface.waitLikeIcon()
         productCardInterface.clickByLikeIcon()
         productCardInterface.getLikeCountBeforeLike()
-        Thread.sleep(1000)
         productCardInterface.clickByLikeIcon()
-        Thread.sleep(1000)
         productCardInterface.assertLikeCount()
     }
 }
